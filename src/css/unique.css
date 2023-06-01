@@ -87,6 +87,8 @@
 }
 
 .text-description-flip {
+  overflow: hidden;
+  text-overflow: ellipsis;
   width: 100%;
   height: 100%;
   font-family: var(--primary-font);
@@ -106,10 +108,9 @@
   width: 100%;
   padding-left: 0;
   margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
   row-gap: 32px;
   align-items: center;
+  margin-top: 0;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -200,6 +201,7 @@
 }
 .components-item {
   position: relative;
+  gap: 6px;
 }
 .text-chocolate-nuts {
   position: absolute;
@@ -231,7 +233,6 @@
 .flip-card-back {
   position: absolute;
   background-color: var(--color-white);
-  margin: 20px;
 }
 /*transform: rotateY(180deg);*/
 
@@ -296,4 +297,18 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .flip-card-back {
+    padding: 20px;
+  }
 }
