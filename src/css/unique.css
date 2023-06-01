@@ -199,10 +199,12 @@
 .logo-text {
   color: var(--main-color);
 }
+
 .components-item {
   position: relative;
   gap: 6px;
 }
+
 .text-chocolate-nuts {
   position: absolute;
   bottom: 28px;
@@ -234,7 +236,6 @@
   position: absolute;
   background-color: var(--color-white);
 }
-/*transform: rotateY(180deg);*/
 
 .button-white {
   display: flex;
@@ -302,13 +303,30 @@
   padding: 28px;
   text-overflow: ellipsis;
   overflow: hidden;
-  transform: rotateY(180deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 
 @media screen and (min-width: 1200px) {
   .flip-card-back {
     padding: 20px;
   }
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
