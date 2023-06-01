@@ -1,5 +1,10 @@
 :root {
   --primary-font: 'Montserrat', sans-serif;
+  --main-color: #fd9222;
+  --secondary-color: #1e1823;
+  --accent-color: #fcf1e0;
+  --main-text-color: #111111;
+  --text-color-dark-bg: #fafafa;
 }
 
 .visually-hidden {
