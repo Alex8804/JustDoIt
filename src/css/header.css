@@ -1,3 +1,12 @@
+:root {
+    --primary-font: 'Montserrat', sans-serif;
+    --main-color: #fd9222;
+    --secondary-color: #1e1823;
+    --accent-color: #fcf1e0;
+    --main-text-color: #111111;
+    --text-color-dark-bg: #fafafa;
+}
+
 /*--- mobile: верстка гумова від 320px,
 стає адаптивною на 375px;
 - tablet: 768px;
@@ -6,12 +15,11 @@
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 20px 20px 14px;
     margin: auto;
 }
 
-.nav-list {
+.nav-header {
     display: none;
 }
 
@@ -50,6 +58,13 @@
     }
 }
 
+@media screen and (max-width: 1199px){
+    .header-container {
+        justify-content: space-between;
+    }
+    
+}
+
 @media screen and (min-width: 768px) {
     .header-container {
         width: 768px;
@@ -67,13 +82,41 @@
         display: none;
     }
 
+    .logo-link {
+        font-size: 18px;
+        line-height: 1.11;
+    }
+
+    .nav-header {
+        display: block;
+        margin-left: auto;
+    }
+
     .nav-list {
         display: flex;
         gap: 24px;
+    
     }
 
     .social-list {
         display: flex;
         gap: 18px;
+        margin-left: 137px;
     }
+
+    .nav-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        color: var(--main-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--main-color);
+    }
+
+
 }
