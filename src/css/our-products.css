@@ -40,7 +40,8 @@
     
 }
 .our-products-img{
-    margin: 0 auto;
+    margin-left: 53px;
+    margin-top: 32px;
 }
 .our-products-h2{
     font-family: 'Montserrat';
@@ -52,6 +53,7 @@
     text-transform: uppercase;
     color: #111111;
     text-align: center;
+    margin: 0 auto;
 }
 .our-products-p{
     font-family: 'Montserrat';
@@ -63,6 +65,7 @@
     letter-spacing: -0.02em;
     color: rgba(17, 17, 17, 0.7);
     margin-bottom: 18px;
+    margin-top: 2px;
 }
 .our-products-button{
     display: flex;
@@ -81,5 +84,9 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 17px;
+        margin-bottom: 32px;
 }
-
+.swiper {
+    width: 600px;
+    height: 300px;
+}
