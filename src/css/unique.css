@@ -143,6 +143,7 @@
 }
 
 .components-milk {
+  position: relative;
   background-color: var(--color-white);
   height: 270px;
   width: 335px;
@@ -156,6 +157,7 @@
 }
 
 .components-nuts {
+  position: relative;
   background-color: var(--secondary-color);
   height: 270px;
   width: 335px;
@@ -169,6 +171,7 @@
 }
 
 .components-semi {
+  position: relative;
   background-color: var(--color-white);
   height: 270px;
   width: 335px;
