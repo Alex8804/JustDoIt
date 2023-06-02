@@ -76,14 +76,14 @@ Mob 375px padding: 0 20px;
 @media only screen and (min-width: 768px) {
   .reviews-card {
     width: 344px;
-    height: 242px;
+    height: 200px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .reviews-card {
     width: 360px;
-    height: 242px;
+    height: 200px;
   }
 }
 
@@ -114,12 +114,6 @@ Mob 375px padding: 0 20px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -175%);
-}
-
-@media only screen and (min-width: 768px) {
-  .reviews-img-avatar {
-    top: 40%;
-  }
 }
 
 /* btn */
