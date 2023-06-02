@@ -232,11 +232,6 @@
   color: var(--main-text-color);
 }
 
-.flip-card-back {
-  position: absolute;
-  background-color: var(--color-white);
-}
-
 .button-white {
   display: flex;
   justify-content: center;
