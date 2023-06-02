@@ -102,7 +102,7 @@
 }
 
 .components {
-  min-height: 320px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
