@@ -61,9 +61,18 @@
     height: 28px;
 }
 
+.menu-container {
+    width: 55%;
+}
+
 @media screen and (min-width: 375px){
     .header-container {
         width: 375px;
+    }
+
+    .menu-container {
+        width: 220px;
+        
     }
 }
 
@@ -81,6 +90,10 @@
     .mobile-menu-close-btn-icon {
         width: 32px;
         height: 32px;
+    }
+
+    .menu-container {
+        width: 290px;
     }
 }
 
@@ -101,7 +114,6 @@
 
     .menu-container {
         position: fixed;
-        width: 220px;
         height: 100%;
         z-index: 100;
         top: 0;
@@ -116,6 +128,7 @@
         position: relative;
         padding-top: 136px;
         padding-bottom: 20px;
+        padding-right: 5px;
         height: 100%;
         display: flex;
         flex-direction: column;
