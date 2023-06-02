@@ -122,9 +122,9 @@
 
 @media screen and (min-width: 1200px) {
   .components {
-    gap: 19px;
+    gap: 18.5px;
     margin-bottom: 0;
-    width: 1137px;
+    width: 1136px;
   }
 }
 
