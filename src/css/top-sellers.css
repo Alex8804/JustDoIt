@@ -1,23 +1,119 @@
-.top-sellers-section{}
+.top-sellers-section{
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
 
-.top-sellers-container{}
+.top-sellers-container{
+}
 
-.top-sellers-header{}
+.top-sellers-header{
+font-family: var(--primary-font);
+font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+margin-bottom: 32px;
+color: var(--main-color);
+}
 
-.top-sellers-header-black{}
+.top-sellers-header-black{
+  color: var(--main-text-color);
+}
 
-.top-sellers-list{}
+.top-sellers-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 150px;
+}
 
-.top-sellers-item{}
+@media only screen and (min-width: 768px) {
+.top-sellers-list {
+  gap: 16px;
+}
+}
 
-.top-sellers-img-container{}
+
+
+.top-sellers-item{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+.top-sellers-item {
+  gap: 32px;
+}
+}
+
+.top-sellers-img-container{
+  max-width: 335px;
+}
+
+@media only screen and (min-width: 768px) {
+.top-sellers-img-container {
+  max-width: 344px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-sellers-img-container {
+    max-width: 368px;
+  }
+}
 
 .top-sellers-img-container-none{
-    display: none;
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+.top-sellers-img-container-none {
+  display: block;
+}
 }
 
 .top-sellers-img{}
 
-.top-sellers-content{}
+.top-sellers-content{
+width: 306px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.29;
+letter-spacing: -0.02em;
+margin-right: auto;
 
-.top-sellers-button{}
+
+color: var(--main-text-color);
+}
+
+.top-sellers-button{
+font-weight: 600;
+font-size: 14px;
+line-height: 1.2;
+border: none;
+
+color: #FFFFFF;;
+width: 120px;
+height: 41px;
+margin-left: auto;
+margin-right: auto;
+
+background: var(--main-color);
+border-radius: 100px;
+transition: color ;
+}
+
+@media only screen and (min-width: 768px) {
+.top-sellers-button {
+  margin-right: 0;
+}
+}
+
+.top-sellers-button:hover,
+.top-sellers-button:focus{
+  color: var(--main-color);
+  background-color: var(--accent-color);
+}
