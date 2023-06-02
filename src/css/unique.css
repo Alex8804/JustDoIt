@@ -102,10 +102,10 @@
 }
 
 .components {
+  min-height: 320px;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  width: 100%;
   padding-left: 0;
   margin-bottom: 20px;
   row-gap: 32px;
@@ -129,17 +129,17 @@
 }
 
 .unique-components {
-  margin-bottom: 72px;
+  padding-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .unique-components {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1200px) {
   .unique-components {
-    margin-bottom: 128px;
+    padding-bottom: 128px;
   }
 }
 
