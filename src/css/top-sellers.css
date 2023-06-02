@@ -1,6 +1,17 @@
 .top-sellers-section{
-  padding-top: 72px;
-  padding-bottom: 72px;
+  padding: 72px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .top-sellers-section {
+    padding: 100px 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-sellers-section {
+    padding: 128px 32px;
+  }
 }
 
 .top-sellers-container{
@@ -78,7 +89,7 @@ color: var(--main-color);
 .top-sellers-img{}
 
 .top-sellers-content{
-width: 306px;
+max-width: 306px;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.29;
@@ -87,6 +98,12 @@ margin-right: auto;
 
 
 color: var(--main-text-color);
+}
+
+@media only screen and (min-width: 1200px) {
+  .top-sellers-content {
+    max-width: 100%;
+  }
 }
 
 .top-sellers-button{
