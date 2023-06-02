@@ -26,17 +26,21 @@
     gap: 18px;
     width: 335px;
     height: 364px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
 }
 .our-products-li{
     box-sizing: border-box;
-    width: 335px;
-    height: 364px;
+    min-width: 335px;
+    min-height: 364px;
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+    
 }
 .our-products-img{
-    justify-content: center;
+    margin: 0 auto;
 }
 .our-products-h2{
     font-family: 'Montserrat';
@@ -72,12 +76,10 @@
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
     margin: auto;
-}
-.our-products-b-text{
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-color: #111111;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
 }
+
