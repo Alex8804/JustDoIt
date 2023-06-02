@@ -1,0 +1,42 @@
+/**
+  |============================
+  | Features style
+  |============================
+*/
+
+.advantages-section {
+    background-color: var(--secondary-color);
+}
+
+.container {}
+
+.visually-hidden {}
+
+.advantages-list {}
+
+.list {}
+
+.advantages-list-item {}
+
+.icon-advantages-field {}
+
+.icon-advantages {}
+
+.advantages-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--color-white);
+    margin-bottom: 18px;
+}
+
+.advantages-desc {
+    max-width: 308px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+
+    color: rgba(255, 255, 255, 0.7);
+
+}
