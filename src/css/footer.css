@@ -47,8 +47,7 @@
   color: var(--text-color-dark-bg);
 }
 
-.contacts-list{
-
+.contacts-list {
 }
 
 .contacts-item {
@@ -63,8 +62,8 @@
 .socials-link {
 }
 .icon-footer {
-    stroke: #FFFFFF;
-    fill: none;
+  stroke: #ffffff;
+  fill: none;
 }
 .nav-list {
   display: flex;
