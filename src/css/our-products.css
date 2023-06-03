@@ -3,6 +3,7 @@
   | Desktop
   |============================
 */
+
 .list{
     list-style: none;
 }
@@ -111,4 +112,8 @@
 }
 .swiper-pagination-bullet-active{
     background: #FD9222;
+}
+.swiper-pagination{
+    margin-bottom: 400px;
+    
 }
