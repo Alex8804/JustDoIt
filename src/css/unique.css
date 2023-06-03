@@ -125,7 +125,7 @@
 
 @media screen and (min-width: 1200px) {
   .components {
-    gap: 18.5px;
+    gap: 19px;
     margin-bottom: 0;
     width: 1136px;
   }
@@ -149,54 +149,27 @@
 .components-chocolate {
   background-color: var(--main-color);
   height: 270px;
-  width: 335px;
   border-radius: 15px;
-}
-
-@media screen and (min-width: 1200px) {
-  .components-chocolate {
-    width: 270px;
-  }
 }
 
 .components-milk {
   background-color: var(--color-white);
   height: 270px;
-  width: 335px;
   border-radius: 15px;
   border: 1px solid var(--main-color);
-}
-@media screen and (min-width: 1200px) {
-  .components-milk {
-    width: 270px;
-  }
 }
 
 .components-nuts {
   background-color: var(--secondary-color);
   height: 270px;
-  width: 335px;
   border-radius: 15px;
-}
-
-@media screen and (min-width: 1200px) {
-  .components-nuts {
-    width: 270px;
-  }
 }
 
 .components-semi {
   background-color: var(--color-white);
   height: 270px;
-  width: 335px;
   border-radius: 15px;
   border: 1px solid var(--main-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .components-semi {
-    width: 270px;
-  }
 }
 
 .logo-text {
@@ -317,7 +290,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -328,4 +301,17 @@
 .flip-card-inner {
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+
+.components-item {
+  width: 335px;
+  height: 100%;
+  height: 270px;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 1200px) {
+  .components-item {
+    width: calc((100% - 57px) / 4);
+  }
 }
