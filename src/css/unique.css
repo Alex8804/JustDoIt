@@ -87,8 +87,6 @@
 }
 
 .text-description-flip {
-  overflow: hidden;
-  text-overflow: ellipsis;
   width: 100%;
   height: 100%;
   font-family: var(--primary-font);
@@ -175,12 +173,6 @@
 .logo-text {
   color: var(--main-color);
 }
-
-.components-item-flip {
-  position: relative;
-  gap: 6px;
-}
-
 .text-chocolate-nuts {
   position: absolute;
   bottom: 28px;
@@ -247,6 +239,7 @@
 .components-button {
   display: flex;
   margin-bottom: 14px;
+  gap: 6px;
 }
 
 .flip-item {
@@ -262,7 +255,7 @@
 }
 
 .components-item-flip {
-  margin-right: 6px;
+  position: relative;
 }
 
 .flip-card-back {
@@ -272,12 +265,10 @@
   background-color: var(--color-white);
   border-radius: 15px;
   padding: 28px;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  overflow-y: scroll;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  overflow-y: scroll;
 }
 
 @media screen and (min-width: 1200px) {
