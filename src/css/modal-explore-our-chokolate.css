@@ -1,0 +1,226 @@
+ /*--Modal-window--*/
+  
+ .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #2E2F42;
+    background: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.modal {
+width: calc(100% - 30px);
+min-height: 576px;
+background-color: #FCFCFC;
+border-radius: 4px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%) scale(1) rotate(0);
+transition: transform 300ms linear;
+padding: 72px 24px 24px;
+}
+
+.backdrop.is-hidden .modal {
+transform: translate(-50%, -50%) scaleY(0) rotate(-15deg);
+}
+
+.modal-close-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 24px;
+right: 24px;
+width: 24px;
+height: 24px;
+border-radius: 50%;
+background-color: transparent;
+background: #E7E9FC;
+border: 1px solid rgba(0, 0, 0, 0.1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+background-color: var(--third-tittle-color);
+fill: var(--main-title-color);
+}
+
+.is-hidden {
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+}
+
+
+
+
+/*--Contact-form--*/
+
+.contact-title {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--color-span);
+margin-bottom: 16px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-field {
+margin-bottom: 8px;
+}
+
+.contact-form-input-desk {
+    font-size: 12px;
+    color: var(--company-color);
+margin-bottom: 4px;
+display: block;
+}
+
+.contact-form-input-wrapper {
+position: relative;
+display: block;
+}
+
+.contact-form-input {
+width: 100%;
+height: 40px;
+font-size: 16px;
+color: var(--color-span);
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+margin-bottom: 8px;
+outline: transparent;
+padding-left: 42px;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-input:focus {
+border-color: var(--third-tittle-color);
+}
+
+.contact-form-input:focus + .contact-form-input-icon {
+fill: var(--third-tittle-color);
+}
+
+
+
+.contact-form-input-icon {
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 18px;
+height: 24px;
+top: 40%;
+left: 16px;
+transform: translateY(-50%);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-massage {
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    resize: none;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-form-massage:focus {
+border-color: var(--third-tittle-color);
+}
+
+.contact-form-massage::placeholder {
+font-size: 12px;
+color: rgba(46, 47, 66, 0.4);
+}
+
+
+.contact-form-checkbox-text{
+display: flex;
+font-size: 12px;
+color: var(--company-color);
+align-items: center;
+margin-bottom: 20px;
+}
+
+.contact-form-privacy{
+color: var(--third-tittle-color);
+}
+
+.contact-form-checkbox-text::before {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2E2F42;
+    border-radius: 2px;
+    content: '';
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.contact-form-checkbox-text {
+    margin-top: 16px;
+}
+
+.contact-form-checkbox:checked + .contact-form-checkbox-text::before {
+background: var(--products-color);
+border: 1px solid #404BBF;
+background-image: url(../images/Vector.svg);
+background-position: center;
+background-repeat: no-repeat;
+border: none;
+}
+
+.contact-form-checkbox:focus + .contact-form-checkbox-text::before {
+outline: 1px solid #404BBF;
+}
+
+.contact-form-btn-wrapper {
+display: flex;
+justify-content: center;
+}
+
+.contact-form-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    min-width: 169px;
+    height: 56px;
+    font-size: 16px;
+    padding: 16px 32px;
+    display: flex;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+    max-width: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    background-color: var(--third-tittle-color);
+    border: 1px solid #404BBF;
+    color: var(--main-title-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
+
+
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+    background-color: var(--products-color);
+    color: var(--main-title-color);
+}
