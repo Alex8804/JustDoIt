@@ -105,7 +105,7 @@ body {
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(./img/mobile/chocolate-covered-cocoa-powder.jpg);
+    url(/img/mobile/chocolate-covered-cocoa-powder.jpg);
   background-size: cover;
   border-radius: 30px;
   overflow: hidden;
@@ -121,7 +121,7 @@ body {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(./img/mobile/chocolate-covered-cocoa-powder@2x.jpg);
+      url(/img/mobile/chocolate-covered-cocoa-powder@2x.jpg);
   }
 }
 
@@ -297,7 +297,7 @@ body {
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(./img/tablet/chocolate-covered-cocoa-powder.jpg);
+      url(/img/tablet/chocolate-covered-cocoa-powder.jpg);
     background-size: cover;
     border-radius: 30px;
     overflow: hidden;
@@ -313,7 +313,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(./img/tablet/chocolate-covered-cocoa-powder@2x.jpg);
+        url(/img/tablet/chocolate-covered-cocoa-powder@2x.jpg);
     }
   }
 
@@ -386,7 +386,7 @@ body {
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(./img/desktop/chocolate-covered-cocoa-powder.jpg);
+      url(/img/desktop/chocolate-covered-cocoa-powder.jpg);
     background-size: cover;
     border-radius: 30px;
     overflow: hidden;
@@ -402,7 +402,7 @@ body {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(./img/desktop/chocolate-covered-cocoa-powder@2x.jpg);
+        url(/img/desktop/chocolate-covered-cocoa-powder@2x.jpg);
     }
   }
 
