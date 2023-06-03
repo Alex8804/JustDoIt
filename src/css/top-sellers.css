@@ -1,16 +1,16 @@
 .top-sellers-section{
-  padding: 72px 20px;
+  padding: 0px 20px 72px 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .top-sellers-section {
-    padding: 100px 32px;
+    padding: 0px 32px 100px 32px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .top-sellers-section {
-    padding: 128px 32px;
+    padding: 0px 32px 128px 32px;
   }
 }
 
@@ -27,6 +27,13 @@ letter-spacing: -0.03em;
 text-transform: uppercase;
 margin-bottom: 32px;
 color: var(--main-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .top-sellers-header {
+    font-size: 24px;
+    line-height: 1.17;
+  }
 }
 
 .top-sellers-header-black{
@@ -125,7 +132,10 @@ transition: color ;
 
 @media only screen and (min-width: 768px) {
 .top-sellers-button {
+  font-size: 18px;
   margin-right: 0;
+  width: 162px;
+  height: 50px;
 }
 }
 
