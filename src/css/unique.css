@@ -106,10 +106,9 @@
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 20px;
   padding-left: 0;
   margin-bottom: 20px;
-  row-gap: 32px;
   align-items: center;
   margin-top: 0;
 }
@@ -118,6 +117,8 @@
   .components {
     width: 704px;
     margin-bottom: 0;
+    gap: 32px;
+    row-gap: 32px;
   }
 }
 
@@ -302,6 +303,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 1200px) {
