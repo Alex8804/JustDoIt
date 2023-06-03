@@ -46,7 +46,7 @@ const reviewsSwiper = new Swiper('.slide-container', {
 });
 var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        spaceBetween: 28,
+        spaceBetween: 18,
         loop: false,
         pagination: {
             el: ".swiper-pagination",
