@@ -86,8 +86,24 @@
   color: var(--main-text-color);
 }
 
+.text-description-flip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 100%;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: flex-start;
+  letter-spacing: -0.02em;
+  color: var(--main-text-color);
+}
+
 .components {
   min-width: 320px;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
@@ -96,10 +112,9 @@
   row-gap: 32px;
   align-items: center;
   margin-top: 0;
-  justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .components {
     width: 704px;
     margin-bottom: 0;
@@ -143,7 +158,6 @@
 }
 
 .components-milk {
-  position: relative;
   background-color: var(--color-white);
   height: 270px;
   width: 335px;
@@ -157,7 +171,6 @@
 }
 
 .components-nuts {
-  position: relative;
   background-color: var(--secondary-color);
   height: 270px;
   width: 335px;
@@ -171,7 +184,6 @@
 }
 
 .components-semi {
-  position: relative;
   background-color: var(--color-white);
   height: 270px;
   width: 335px;
@@ -188,9 +200,12 @@
 .logo-text {
   color: var(--main-color);
 }
-.components-item {
+
+.components-item-flip {
   position: relative;
+  gap: 6px;
 }
+
 .text-chocolate-nuts {
   position: absolute;
   bottom: 28px;
@@ -216,4 +231,98 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
+}
+
+.button-white {
+  display: flex;
+  justify-content: center;
+  padding: 6px 16px;
+  width: 100%;
+  height: 24px;
+  background-color: var(--main-color);
+  border-radius: 35px;
+  border: none;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1.2;
+  align-items: center;
+  color: var(--color-white);
+}
+
+.button-black {
+  display: flex;
+  justify-content: center;
+  padding: 6px 16px;
+  gap: 4px;
+  width: 100%;
+  height: 24px;
+  background-color: var(--text-color-dark-bg);
+  border: 1px solid var(--main-color);
+  border-radius: 35px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: var(--main-text-color);
+}
+
+.components-button {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.flip-item {
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 8px;
+}
+
+.components-item-flip {
+  margin-right: 6px;
+}
+
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  border-radius: 15px;
+  padding: 28px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 1200px) {
+  .flip-card-back {
+    padding: 20px;
+  }
+}
+
+.flip-card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
