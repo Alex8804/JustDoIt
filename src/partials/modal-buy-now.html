@@ -1,0 +1,88 @@
+<div class="modal-buy">
+  <button type="button" class="modal-buy-close-btn">
+    <svg class="modal-buy-close-icon" width="12" height="12">
+      <use href="../img/icons.svg#close-icon"></use>
+    </svg>
+  </button>
+  <h2 class="modal-buy-title"><span class="title-orange">buy</span> now</h2>
+  <ul class="modal-product-list list">
+    <li class="modal-product-list-item">
+      <img
+        srcset="
+          ../img/modal-buy/modal-buy-img1-84.png   84w,
+          ../img/modal-buy/modal-buy-img1-120.png 120w,
+          ../img/modal-buy/modal-buy-img1-168.png 168w,
+          ../img/modal-buy/modal-buy-img1-240.png 240w
+        "
+        src="../img/modal-buy/modal-buy-img1-84.png"
+        sizes="(min-width: 768px) 120px, 84px"
+        alt="Kinder chokolate"
+      /><span></span>
+    </li>
+    <li class="modal-product-list-item">
+      <img
+        srcset="
+          ../img/modal-buy/modal-buy-img2-84.png   84w,
+          ../img/modal-buy/modal-buy-img2-120.png 120w,
+          ../img/modal-buy/modal-buy-img2-168.png 168w,
+          ../img/modal-buy/modal-buy-img2-240.png 240w
+        "
+        src="../img/modal-buy/modal-buy-img2-84.png"
+        sizes="(min-width: 768px) 120px, 84px"
+        alt="Praline chokolate"
+      /><span></span>
+    </li>
+    <li class="modal-product-list-item">
+      <img
+        srcset="
+          ../img/modal-buy/modal-buy-img3-84.png   84w,
+          ../img/modal-buy/modal-buy-img3-120.png 120w,
+          ../img/modal-buy/modal-buy-img3-168.png 168w,
+          ../img/modal-buy/modal-buy-img3-240.png 240w
+        "
+        src="../img/modal-buy/modal-buy-img3-84.png"
+        sizes="(min-width: 768px) 120px, 84px"
+        alt="Dark chokolate"
+      /><span></span>
+    </li>
+  </ul>
+  <form class="modal-buy-form">
+    <div class="personal-information">
+      <label>
+        Personal information
+        <input type="text" name="form-buy-name" placeholder="Name" />
+      </label>
+      <label>
+        <input type="text" name="form-buy-surname" placeholder="Surname" />
+      </label>
+    </div>
+    <label>
+      Email
+      <input
+        type="email"
+        name="form-buy-email"
+        placeholder="Enter your email"
+      />
+    </label>
+    <label>
+      Phone number
+      <p class="phone-prefix">+380</p>
+      <input type="tel" name="form-buy-tel" placeholder="Phone number" />
+    </label>
+    <label>
+      Card number
+      <input type="text" name="form-buy-card" placeholder="Enter card" />
+    </label>
+    <label>
+      Comment
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+    <button class="btn-submit" type="submit">Submit</button>
+  </form>
+</div>

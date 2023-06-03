@@ -1,0 +1,72 @@
+.modal-buy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--text-color-dark-bg);
+  padding: 32px 24px;
+  min-width: 311px;
+  /* width: calc(100vw - 64px); */
+  border-radius: 15px;
+  z-index: 100;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy {
+    max-width: 609px;
+  }
+}
+.modal-buy-close-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.modal-buy-close-icon {
+  fill: var(--main-text-color);
+}
+.modal-buy-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 32px;
+}
+.title-orange {
+  color: var(--main-color);
+}
+.modal-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.modal-product-list-item {
+  padding: 8px 16px;
+  max-width: 263px;
+  background: var(--color-white);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+}
+.modal-buy-form {
+}
+.personal-information {
+}
+.phone-prefix {
+}
+.btn-submit {
+  padding: 12px 28px;
+  background: var(--main-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-white);
+  border: none;
+}
