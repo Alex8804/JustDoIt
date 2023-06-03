@@ -1,99 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/our-products.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
-        rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />    
-    <title>Document</title>
-</head>
-<body>
-    <!-- Section Our Products -->
-    <section id="our_products" class="our-products-section">     
-        <h1 class="our-products-h1">Our <span class="our-products-span">Products</span></h1>
-            <ul class="our-products-ul list">
-            
-           
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img">
-                    <h2 class="our-products-h2">Orange</h2>
-                    <p class="our-products-p">Dark chocolate</p>
-                    <button type="button" class="our-products-button">45 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/apple-cranberry.jpg" alt="Apple&Cranberry" class="our-products-img">
-                    <h2 class="our-products-h2">Apple&Cranberry</h2>
-                    <p class="our-products-p">Milk chocolate</p>
-                    <button type="button" class="our-products-button">50 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/lime-sea-salt.jpg" alt="Lime&Sea salt" class="our-products-img">
-                    <h2 class="our-products-h2">Lime&Sea salt</h2>
-                    <p class="our-products-p">Dark chocolate</p>
-                    <button type="button" class="our-products-button">66 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/pineapple.jpg" alt="Pineapple" class="our-products-img">
-                    <h2 class="our-products-h2">Pineapple</h2>
-                    <p class="our-products-p">Dark chocolate</p>
-                    <button type="button" class="our-products-button">54 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/classik-milk.jpg" alt="Classic Milk" class="our-products-img">
-                    <h2 class="our-products-h2">Classic</h2>
-                    <p class="our-products-p">Milk chocolate</p>
-                    <button type="button" class="our-products-button">45 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/honey.jpg" alt="Honey" class="our-products-img">
-                    <h2 class="our-products-h2">Honey</h2>
-                    <p class="our-products-p">Milk chocolate</p>
-                    <button type="button" class="our-products-button">50 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/roasted-fruits.jpg" alt="Roasted fruits" class="our-products-img">
-                    <h2 class="our-products-h2">Roasted fruits</h2>
-                    <p class="our-products-p">Dark chocolate</p>
-                    <button type="button" class="our-products-button">66 UAH</button></div>
-                    <div class="swiper-slide our-products-div"><img src="../img/our-product-img/classic-white.jpg" alt="Classic White" class="our-products-img">
-                    <h2 class="our-products-h2">Classic</h2>
-                    <p class="our-products-p">White chocolate</p>
-                    <button type="button" class="our-products-button">54 UAH</button></div>
-                </div>
-                
+<section id="our_section"  class="our-products-section">
+    <div class="container swiper mySwiper">
+        <h2 class="our-products-h2">Our <span class="our-products-span">Products</span></h2>
+        <div class="our-products-wrapper swiper-wrapper">
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
             </div>
-            <div class="swiper-pagination"></div>
-        </ul>
-            
-
-
-
-
-    </section>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: false,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            375: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1200: {
-                slidesPerView: 4,
-                spaceBetween: 20,
-            },
-        },
-    });
-</script>
-</body>
-</html>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/apple-cranberry.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/pineapple.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+            <div class="our-products-card swiper-slide">
+                <img src="../img/our-product-img/orange.jpg" alt="Orange" class="our-products-img" width="230">
+                <h3 class="our-products-h3">Orange</h3>
+                <p class="our-products-p">Dark chocolate</p>
+                <div class="our-products-div-button">45 UAH</div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
