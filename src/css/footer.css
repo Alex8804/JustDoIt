@@ -32,6 +32,7 @@
 .contacts-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 .mail-tel-container {
   display: flex;
@@ -47,7 +48,7 @@
 }
 
 .contacts-list{
-    
+
 }
 
 .contacts-item {
@@ -62,7 +63,8 @@
 .socials-link {
 }
 .icon-footer {
-  fill: var(--text-color-dark-bg);
+    stroke: #FFFFFF;
+    fill: none;
 }
 .nav-list {
   display: flex;
