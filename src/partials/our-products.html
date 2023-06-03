@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- Section Our Products -->
-    <section id="our_products">     
+    <section id="our_products" class="our-products-section">     
         <h1 class="our-products-h1">Our <span class="our-products-span">Products</span></h1>
             <ul class="our-products-ul list">
             
@@ -54,7 +54,6 @@
                     <h2 class="our-products-h2">Classic</h2>
                     <p class="our-products-p">White chocolate</p>
                     <button type="button" class="our-products-button">54 UAH</button></div>
-                    <div class="swiper-slide our-products-div">Slide 9</div>
                 </div>
                 
             </div>
@@ -67,9 +66,10 @@
 
     </section>
             <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+            <script src="/src/main.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 30,
         loop: false,
         pagination: {
@@ -79,6 +79,20 @@
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            375: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
         },
     });
 </script>
