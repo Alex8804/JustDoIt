@@ -93,7 +93,7 @@
   }
 }
 .subtitle_subscribe {
-  max-width: 326px;
+  width: 326px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -102,9 +102,9 @@
   margin: auto;
   margin-bottom: 24px;
 }
-@media only screen and (min-width: 375px) {
+@media only screen and (max-width: 374px) {
   .subtitle_subscribe {
-    width: 326px;
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 768px) {
