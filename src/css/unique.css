@@ -1,4 +1,5 @@
 .unique-components {
+  max-width: 375px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -191,6 +192,13 @@
   background: var(--main-color);
   border-radius: 35px;
   padding: 6px 16px;
+  height: 24px;
+}
+
+.text-container-sweet {
+  background: var(--main-color);
+  border-radius: 35px;
+  padding: 6px 10px;
   height: 24px;
 }
 
