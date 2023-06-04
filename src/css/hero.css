@@ -79,11 +79,6 @@ body {
   padding: 0;
 }
 
-.link {
-  text-decoration: none;
-  color: var(--color_wh);
-}
-
 .address {
   font-style: normal;
 }
