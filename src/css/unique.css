@@ -195,13 +195,6 @@
   height: 24px;
 }
 
-.text-container-sweet {
-  background: var(--main-color);
-  border-radius: 35px;
-  padding: 6px 10px;
-  height: 24px;
-}
-
 .name-ingridient-black {
   display: flex;
   align-items: center;
@@ -218,6 +211,13 @@
   border-radius: 35px;
   border: 1px solid var(--main-color);
   padding: 6px 16px;
+  height: 24px;
+}
+.text-container-black-sweet {
+  background-color: var(--text-color-dark-bg);
+  border-radius: 35px;
+  border: 1px solid var(--main-color);
+  padding: 6px 10px;
   height: 24px;
 }
 
