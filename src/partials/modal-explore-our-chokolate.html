@@ -1,15 +1,15 @@
 <div class="modal-explore-menu">
   <div class="modal-explore-menu-container modal">
     <button type="button" class="modal-explore-menu-close-btn">
-      <svg class="modal-explore-menu-close-icon" width="12" height="12">
-        <use href="../img/icons.svg#close-icon"></use>
+      <svg class="modal-explore-menu-close-icon" width="24" height="24">
+        <use href="./img/icons.svg#close-icon"></use>
       </svg>
     </button>
     <picture>
       <source
         srcset="
-          ../img/modal-explore-our-chokolate/tab-desc-modal-explore-538x196.jpg     1x,
-          ../img/modal-explore-our-chokolate/tab-desc-modal-explore-1076x392@2x.jpg 2x
+          ./img/modal-explore-our-chokolate/tab-desc-modal-explore-538x196.jpg     1x,
+          ./img/modal-explore-our-chokolate/tab-desc-modal-explore-1076x392@2x.jpg 2x
         "
         media="(min-width:768px)"
         type="image/jpeg"
@@ -17,8 +17,8 @@
       />
       <source
         srcset="
-          ../img/modal-explore-our-chokolate/mobile-modal-explore-311x169.jpg 1x,
-          ../img/modal-explore-our-chokolate/mobile-modal-explore-622x338.jpg 2x
+          ./img/modal-explore-our-chokolate/mobile-modal-explore-311x169.jpg    1x,
+          ./img/modal-explore-our-chokolate/mobile-modal-explore-622x338@2x.jpg 2x
         "
         media="(max-width:767px)"
         type="image/jpeg"
@@ -26,21 +26,28 @@
       />
       <img
         class="modal-explore-picture"
-        src="../img/modal-explore-our-chokolate/mobile-modal-explore-311x169.jpg"
+        src="./img/modal-explore-our-chokolate/mobile-modal-explore-311x169.jpg"
         alt="broken chocolate bars"
       />
     </picture>
-    <p>Explore our <span>new chocolate</span> new chocolate first!</p>
-    <label>
-      <input
-        class="modal-explore-form-input"
-        type="email"
-        name="user_email"
-        placeholder="E-mail"
-        required
-      />
-      <button class="modal-explore-btn" type="submit">Submit</button>
-    </label>
+    <h2 class="modal-window-name">
+      Explore our <br />
+      <span class="akcent-text">new chocolate</span> first!
+    </h2>
+    <form class="modal-explore-form">
+      <label for="user-explore-email" class="send-form">
+        <input
+          class="modal-explore-form-input"
+          id="user-explore-email"
+          type="email"
+          name="user_email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <button class="modal-explore-btn" type="submit">Submit</button>
+      </label>
+    </form>
   </div>
 </div>
 <div class="overlay js-overlay-modal"></div>
