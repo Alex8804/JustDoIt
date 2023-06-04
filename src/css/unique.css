@@ -45,7 +45,7 @@
   }
 }
 
-.item-text {
+.unique-item-text {
   width: 335px;
   height: 100%;
   justify-content: center;
@@ -63,17 +63,17 @@
 }
 
 @media screen and (min-width: 768px) {
-  .item-text {
+  .unique-item-text {
     width: 411px;
     margin-bottom: 28px;
   }
 }
 
-.logo-text {
+.unique-logo-text {
   color: var(--main-color);
 }
 
-.text-description {
+.unique-text-description {
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
@@ -188,10 +188,9 @@
 }
 
 .text-container {
-  background-color: var(--main-color);
+  background: var(--main-color);
   border-radius: 35px;
   padding: 6px 16px;
-  gap: 4px;
   height: 24px;
 }
 
@@ -311,26 +310,4 @@
 .components-semi {
   background-color: var(--color-white);
   height: 270px;
-}
-
-.text-container {
-  padding: 6px 16px;
-  height: 24px;
-  background: #fd9222;
-  border-radius: 35px;
-}
-.text-container-light {
-  background-color: #fafafa;
-  border: 1px solid #fd9222;
-}
-.name-ingridient {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-}
-.name-ingridient-black {
-  color: black;
 }
