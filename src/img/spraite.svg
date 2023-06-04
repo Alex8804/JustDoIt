@@ -37,5 +37,9 @@
       <path d="M4.492 19.89 14.779 3.258l.611-.643 7.862 5.242.054 3.163 1.919 3.13-8.476 13.437-12.256-7.696z" style="fill:var(--color6, #fcf1e0)"/>
       <path stroke="#fd9222" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.618" d="M21.378 23.521 7.837 15.06m3.735-6.125 13.541 8.461m-14.239 8.02L22.076 7.041m4.592 7.803c-2.902-1.813-4.041-3.23-2.174-6.293l-9.188-5.742L4.104 21.184l13.541 8.461 9.024-14.802z" style="stroke:var(--color2, #fd9222)"/>
     </symbol>
+    <symbol id="icon-flag" viewBox="0 0 43 32">
+      <path fill="#ffd700" style="fill: var(--color1, #ffd700)" d="M42.443 0.523h-42.119v31.344h42.119v-31.344z"></path>
+      <path fill="#0057b7" style="fill: var(--color2, #0057b7)" d="M0.324 0.523h42.119v15.672h-42.119v-15.672z"></path>
+    </symbol>
   </defs>
 </svg>
