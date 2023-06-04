@@ -26,8 +26,8 @@
       з
     />
     
-    <script type="module" crossorigin src="/JustDoIt/assets/index-57671ff3.js"></script>
-    <link rel="stylesheet" href="/JustDoIt/assets/index-bf0eab52.css">
+    <script type="module" crossorigin src="/JustDoIt/assets/index-86d5c7d6.js"></script>
+    <link rel="stylesheet" href="/JustDoIt/assets/index-acb92b43.css">
   </head>
   <body>
     <header class="header">
@@ -152,7 +152,32 @@
 </header>
 
     <main>
-      
+      <section class="main container" id="home">
+  <div class="main-bg">
+    <h1 class="visually-hidden">Greet chocolate</h1>
+    <h3 class="main_text">
+      Treat yourself or a loved one to <span class="break"><br /></span>our
+      finest ingredients for a moment of pure delight!
+    </h3>
+    <ul class="main-button">
+      <li class="main_butt">
+        <button class="buynow button_style" type="button" id="open-buynow1">
+          Buy now
+        </button>
+        <a class="howmade button_style" href="#howtomade">How it's made</a>
+      </li>
+      <li class="scroll">
+        <p class="main_scroll">scroll down</p>
+        <a class="main_scroll-cont" href="#footer" aria-label="Scroll down">
+          <svg class="main_scroll-icon" aria-label="Scroll">
+            <use href="/JustDoIt/assets/spraite-2dc26b3e.svg#icon-scroll"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
       <!-- Advantages section -->
 <section class="advantages-section">
   <div class="advantages-container">
@@ -515,60 +540,74 @@
         </ul> 
     </div>
 </section>
-      <section class="reviews-section" id="reviews">
-    <div class="container swiper slide-container">
-        <h2 class="reviews-title"><span class="accent-reviews-title">chocolate</span> is loved</h2>
-        <div class="swiper-wrapper">
-            <div class="reviews-card swiper-slide">
-                <img class="reviews-img-avatar" srcset="/JustDoIt/assets/1-26994fef.png 1x, /JustDoIt/assets/ret-1-9a168b69.png 2x" src="/JustDoIt/assets/1-26994fef.png" alt="person avatar" width="80px">
-                <h3 class="reviews-person-avatar">Victoria Dobrzhanska</h3>
-                <p class="reviews-card-text">I love this chocolate bar. Perfect combination of light crispy wafer,
-                    covered
-                    in a
-                    thin layer chocolate.
-                </p>
-            </div>
-            <div class="reviews-card swiper-slide">
-                <img class="reviews-img-avatar" srcset="/JustDoIt/assets/2-60a3a2df.png 1x, /JustDoIt/assets/ret-2-56e4d2db.png 2x" src="/JustDoIt/assets/2-60a3a2df.png" alt="person avatar" width="80px">
-                <h3 class="reviews-person-avatar">Nazar Babenko</h3>
-                <p class="reviews-card-text">This chocolate confection is a delight! A delight! The wafer is light and
-                    crisp, the hazelnut cream is smooth, and the chocolate is good.
-                </p>
-            </div>
-            <div class="reviews-card swiper-slide">
-                <img class="reviews-img-avatar" srcset="/JustDoIt/assets/3-0b243c6a.png 1x, /JustDoIt/assets/ret-3-56ab040e.png 2x" src="/JustDoIt/assets/3-0b243c6a.png" alt="person avatar" width="80px">
-                <h3 class="reviews-person-avatar">Olena Kampusch</h3>
-                <p class="reviews-card-text"> Chocolate is a family favourite treat. Love the delicious smooth chocolate
-                    and the creaminess inside. The wafer is soft but crunchy.
-                </p>
-            </div>
-            <div class="reviews-card swiper-slide">
-                <img class="reviews-img-avatar" srcset="/JustDoIt/assets/4-80136bd7.png 1x, /JustDoIt/assets/ret-4-5e13b95a.png 2x" src="/JustDoIt/assets/4-80136bd7.png" alt="person avatar" width="80px">
-                <h3 class="reviews-person-avatar">Natalia Sus</h3>
-                <p class="reviews-card-text">The chocolate assortment was delicious. Both dark and milk chocolate pieces
-                    were smooth and just right on the sweetness level.
-                </p>
-            </div>
-            <div class="reviews-card swiper-slide">
-                <img class="reviews-img-avatar" srcset="/JustDoIt/assets/5-f5fad5d1.png 1x, /JustDoIt/assets/ret-5-08391c34.png 2x" src="/JustDoIt/assets/5-f5fad5d1.png" alt="person avatar" width="80px">
-                <h3 class="reviews-person-avatar">Danilo Nottingham</h3>
-                <p class="reviews-card-text">This is delicious. It so rich and flavorful you don’t need to use as many.
-                    I love topping an apple with almond butter and these chips for a snack.
-                </p>
-            </div>
-            <div class="reviews-card swiper-slide">
-                <img class="reviews-img-avatar" srcset="/JustDoIt/assets/6-1460bcee.png 1x, /JustDoIt/assets/ret-6-8f1152e2.png 2x" src="/JustDoIt/assets/6-1460bcee.png" alt="person avatar" width="80px">
-                <h3 class="reviews-person-avatar">Irina Tydnyuk</h3>
-                <p class="reviews-card-text">This is simply the best chocolate around, and I'm just thrilled to support
-                    a local company! Best local chocolate - world class :)
-                </p>
-            </div>
+      <div id="review" class="modal">
+  <div class="window-review">
+    <button class="close" type="button" data-modal-close aria-label="Close">
+      <svg class="icon-modal">
+        <use href="/JustDoIt/assets/spraite-2dc26b3e.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h2 class="review-title">
+      leave a review <span class="review-break"><br /></span>about
+      <span class="orange_text">our chocolate</span>
+    </h2>
+    <form class="review-form" method="post" autocomplete="on">
+      <label for="name">
+        <input
+          class="review-form-item"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label for="email">
+        <input
+          class="review-form-item"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          required
+          title="Please correct email"
+        />
+      </label>
+      <label for="phone" style="position: relative">
+        <div class="phone-prefix">
+          <svg class="icon-modal" width="24px" height="18px">
+            <use href="/JustDoIt/assets/spraite-2dc26b3e.svg#icon-flag"></use>
+          </svg>
+          <span class="phone-text">+380</span>
         </div>
-        <div class="swiper-pagination"></div>
-        <button class="reviews-btn" type="button">Leave a review</button>
-    </div>
+        <input
+          class="review-form-item"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone number"
+          pattern="[1-9]{9}"
+          required
+          title="Please correct phone"
+        />
+      </label>
+      <textarea
+        class="review-form-item-text"
+        type="text"
+        id="text"
+        name="text"
+        rows="1"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="review-button" type="button" aria-label="Send" id="Send">
+        Send
+      </button>
+    </form>
+  </div>
+  <div id="overlay-review_w" class="overlay"></div>
+</div>
+<script src="/js/modal.js"></script>
 
-</section>
       <section class="subscribe">
   <div class="container_subscribe">
     <h2 class="title_subscribe">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
