@@ -1,0 +1,266 @@
+.modal-buy {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--text-color-dark-bg);
+  padding: 32px 24px;
+  min-width: 311px;
+  /* width: calc(100vw - 64px); */
+  border-radius: 15px;
+  z-index: 100;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy {
+    width: 609px;
+    padding: 48px;
+  }
+}
+
+.modal-buy-close-btn {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+}
+.modal-buy-close-icon {
+  stroke: var(--main-text-color);
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-close-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+.modal-buy-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-title {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+.title-orange {
+  color: var(--main-color);
+}
+.modal-product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-product-list {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+}
+.modal-product-list-item {
+  padding: 8px 16px;
+  max-width: 263px;
+  background: var(--color-white);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 768px) {
+  .modal-product-list-item {
+    padding: 24px 20px 18px;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-img {
+    margin-bottom: 14px;
+  }
+}
+.modal-buy-weight {
+  padding: 6px 16px;
+  background: var(--text-color-dark-bg);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--main-text-color);
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-weight {
+    padding: 8px 29px;
+  }
+}
+.modal-buy-form {
+}
+
+@media only screen and (min-width: 768px) {
+  .personal-information {
+    display: flex;
+    gap: 21px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .personal-information .modal-buy-input {
+    width: 246px;
+  }
+}
+.btn-submit {
+  padding: 12px 28px;
+  background: var(--main-color);
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--color-white);
+  border: none;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 768px) {
+  .btn-submit {
+    padding: 14px 40px;
+  }
+}
+.btn-submit:hover,
+.btn-submit:focus {
+  color: var(--main-color);
+  background-color: var(--accent-color);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-buy-label {
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #000000;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-label {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+.modal-buy-input,
+.modal-buy-textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  padding: 14px 18px;
+  border: none;
+  background-color: var(--text-color-dark-bg);
+  outline: 1.5px solid rgba(17, 17, 17, 0.05);
+  box-shadow: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  width: 100%;
+}
+.modal-buy-input:placeholder-shown {
+  color: rgba(64, 64, 64, 0.3);
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-input,
+  .modal-buy-textarea {
+    padding: 22px 24px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.input-tel {
+  padding-left: 106px;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 768px) {
+  .input-tel {
+    padding-left: 177px;
+  }
+}
+.card-input {
+  margin-bottom: 0;
+}
+.modal-buy-thumb-tel,
+.modal-buy-thumb-card {
+  position: relative;
+  margin-bottom: 18px;
+}
+.modal-buy-flag-icon {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-flag-icon {
+    top: 22px;
+    left: 24px;
+    width: 32px;
+    height: 24px;
+  }
+}
+.modal-buy-card-icon {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-card-icon {
+    width: 44px;
+    height: 30px;
+    top: 18px;
+    right: 24px;
+  }
+}
+.phone-prefix {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.02em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 8px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .phone-prefix {
+    font-size: 18px;
+    line-height: 22px;
+    top: 17px;
+    left: 74px;
+    padding-right: 32px;
+  }
+}
+.modal-buy-textarea {
+  resize: none;
+  min-height: 91px;
+}
+@media only screen and (min-width: 768px) {
+  .modal-buy-textarea {
+    min-height: 137px;
+  }
+}

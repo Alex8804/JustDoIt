@@ -31,6 +31,8 @@
 
 .logo-icon {
     margin-left: 4px;
+    width: 21px;
+    height: 21px;
 }
 
 .menu-hamburger-btn {
@@ -247,6 +249,11 @@
     .logo-link {
         font-size: 18px;
         line-height: 1.11;
+    }
+
+    .logo-icon {
+        width: 24px;
+        height: 24px;
     }
 
     .nav-header {
