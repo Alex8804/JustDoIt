@@ -1,1 +1,65 @@
-  
+     <!--Modal window -->
+     <div class="backdrop is-hidden" data-modal>
+        <div class="our-modal">
+            <button type="button" class="our-modal-close-btn" data-modal-close>
+                <use href="./new_modal/src/img/icons.svg#close-icon"></use>
+                </svg> 
+            </button>
+             <!-- Contact-form -->
+             <h1 class="our-contact-title">LEAVE A REVIEW ABOUT
+                <span class="our-colortext">OUR CHOCOLATE</span> </h1>
+                   <form class="our-contact-form">
+                 <label class="our-contact-form-field">
+                     <input 
+                     type="text" 
+                     pattern="^[a-zA-Z]+$"
+                     class="our-contact-form-input"
+                     name="user-name" 
+                     placeholder="Name"
+                     required>
+                     </span>
+                 </label>
+                 <label class="our-contact-form-field">
+                     <input 
+                     type="email" 
+                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                     class="our-contact-form-input" 
+                     name="user-email"
+                     placeholder="Email"
+                     required>
+                        </span>
+                 </label>
+                 <label class="our-contact-form-field ">
+                    
+                    <p class="our-phone-prefix">+380</p>
+                     <input 
+                     type="tel" 
+                     pattern="^[ 0-9]+$"
+                     class="our-contact-form-input-tel"
+                     name="user-phone" 
+                     placeholder="Phone number"
+                     required>
+                     <span class="our-contact-form-input-icon">
+                        <svg width="18" height="24">
+                            <use href="../new_modal/src/img/icons.svg#spoon"></use>
+                        </svg>
+                    </span>
+                          
+                      </label>
+                 <label class="our-contact-form-field">
+                 <textarea 
+             name="user-massage" 
+             class="our-contact-form-massage" 
+             placeholder="Enter text"
+             ></textarea>
+             </label>
+             <div class="our-contact-form-btn-wrapper">
+             <button type="submit" class="our-contact-form-btn">Send</button>
+             </div>    
+         </form>
+         </div>
+     </div> 
+         <script src="./js/modal.js" type="module"></script>
+ </body>
+</html> 
+

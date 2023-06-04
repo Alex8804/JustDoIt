@@ -1,6 +1,7 @@
- /*--Modal-window--*/
-  
- .backdrop {
+.no-scroll {
+    overflow: hidden;
+}
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,45 +13,46 @@
     transition: opacity 250ms linear, visibility 250ms linear;
 }
 
-.modal {
-width: calc(100% - 30px);
-min-height: 576px;
-background-color: #FCFCFC;
-border-radius: 4px;
-position: absolute;
+.our-modal {
+width: 517px;
+height:628px;
+background-color: #FAFAFA;
+border-radius: 15px;
+position: relative;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%) scale(1) rotate(0);
 transition: transform 300ms linear;
-padding: 72px 24px 24px;
+padding:10px 24px 24px;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is-hidden .our-modal {
 transform: translate(-50%, -50%) scaleY(0) rotate(-15deg);
 }
 
-.modal-close-btn {
-display: flex;
-justify-content: center;
-align-items: center;
-position: absolute;
-top: 24px;
-right: 24px;
-width: 24px;
-height: 24px;
-border-radius: 50%;
-background-color: transparent;
-background: #E7E9FC;
-border: 1px solid rgba(0, 0, 0, 0.1);
-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.our-modal-close-btn {
+    display: block;
+     --weight: 0.6px;
+    --aa: 1px; /* anti-aliasing */
+    --color: black;
+    border-radius: 0px;
+        background:
+      linear-gradient(45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa))),
+      linear-gradient(-45deg, transparent calc(50% - var(--weight) - var(--aa)), var(--color) calc(50% - var(--weight)), var(--color) calc(50% + var(--weight)), transparent calc(50% + var(--weight) + var(--aa)));
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 14px;
+      height: 14px;
+      border: 0px 
 }
 
-.modal-close-btn:hover,
+/*.modal-close-btn:hover,
 .modal-close-btn:focus {
-background-color: var(--third-tittle-color);
-fill: var(--main-title-color);
-}
+background-color: #E2E2E2;
+}*/
 
 .is-hidden {
 opacity: 0;
@@ -58,66 +60,81 @@ visibility: hidden;
 pointer-events: none;
 }
 
-
-
-
 /*--Contact-form--*/
 
-.contact-title {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0.02em;
-color: var(--color-span);
-margin-bottom: 16px;
-}
+.our-contact-title {
+ Font family: Montserrat;
+font-weight: 600;
+font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: :left;
+  margin-top :30px;
+  margin-right:150px;
 
-.contact-form {
+}
+.our-colortext{
+ font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+text-align: left;
+letter-spacing: 0.02em;
+color: rgba(253, 146, 34, 1);
+margin-bottom: 16px;
+ }
+
+.our-contact-form {
     display: flex;
     flex-direction: column;
+   
 }
 
-.contact-form-field {
+.our-contact-form-field {
 margin-bottom: 8px;
+margin-top: 10px;
+
 }
 
-.contact-form-input-desk {
+.our-contact-form-input-desk {
     font-size: 12px;
     color: var(--company-color);
 margin-bottom: 4px;
 display: block;
-}
-
-.contact-form-input-wrapper {
-position: relative;
-display: block;
-}
-
-.contact-form-input {
-width: 100%;
-height: 40px;
-font-size: 16px;
-color: var(--color-span);
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-margin-bottom: 8px;
-outline: transparent;
-padding-left: 42px;
-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact-form-input:focus {
-border-color: var(--third-tittle-color);
-}
-
-.contact-form-input:focus + .contact-form-input-icon {
-fill: var(--third-tittle-color);
+;
 }
 
 
+.our-contact-form-input {
+    width: 100%;
+    height: 80px;
+    padding: 8px 16px;
+    font-size: 18px;
+    Weight:400;
+   color: rgba(46, 47, 66, 0.4);
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+   
+}
+.our-contact-form-input-tel {
+   width: 100%;
+    height: 80px;
+    padding: 8px 120px;
+    font-size: 18px;
+    Weight:400;
+   color: rgba(46, 47, 66, 0.4);
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+ 
+}
 
-.contact-form-input-icon {
+
+.our-contact-form-input:focus {
+border-color:black;
+}
+
+.our-contact-form-input-icon {
 position: absolute;
 display: flex;
 align-items: center;
@@ -129,41 +146,43 @@ left: 16px;
 transform: translateY(-50%);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.contact-form-massage {
+.our-phone-prefix {
+    position: absolute;
+    top: 330px;
+    left: 90px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    padding-right: 8px;
+    box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+  }
+.our-contact-form-massage {
     width: 100%;
     height: 120px;
     padding: 8px 16px;
     resize: none;
-    border-radius: 4px;
+    border-radius: 10px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     outline: transparent;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-massage:focus {
-border-color: var(--third-tittle-color);
-}
-
-.contact-form-massage::placeholder {
-font-size: 12px;
+.our-contact-form-massage::placeholder {
+font-size: 21px;
 color: rgba(46, 47, 66, 0.4);
 }
 
 
-.contact-form-checkbox-text{
+.our-contact-form-checkbox-text{
 display: flex;
 font-size: 12px;
-color: var(--company-color);
 align-items: center;
 margin-bottom: 20px;
 }
 
-.contact-form-privacy{
-color: var(--third-tittle-color);
-}
-
-.contact-form-checkbox-text::before {
+.our-contact-form-checkbox-text::before {
     display: block;
     width: 16px;
     height: 16px;
@@ -174,53 +193,30 @@ color: var(--third-tittle-color);
     margin-right: 8px;
 }
 
-.contact-form-checkbox-text {
-    margin-top: 16px;
-}
-
-.contact-form-checkbox:checked + .contact-form-checkbox-text::before {
-background: var(--products-color);
-border: 1px solid #404BBF;
-background-image: url(../images/Vector.svg);
-background-position: center;
-background-repeat: no-repeat;
-border: none;
-}
-
-.contact-form-checkbox:focus + .contact-form-checkbox-text::before {
-outline: 1px solid #404BBF;
-}
-
-.contact-form-btn-wrapper {
+.our-contact-form-btn-wrapper {
 display: flex;
-justify-content: center;
+justify-content: left;
 }
 
-.contact-form-btn {
-    font-family: 'Roboto';
-    font-weight: 500;
-    min-width: 169px;
-    height: 56px;
-    font-size: 16px;
-    padding: 16px 32px;
-    display: flex;
-    display: block;
-    align-items: center;
-    cursor: pointer;
-    max-width: 0 auto;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    background-color: transparent;
-    background-color: var(--third-tittle-color);
-    border: 1px solid #404BBF;
-    color: var(--main-title-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
-}
+.our-contact-form-btn {
+ font-family: 'Montserrat';
+ font-weight: 600; 
+ min-width: 117px;
+ height: 45px;
+font-size: 14px;
+color: rgba(255, 255, 255, 1);
+padding: 16px 32px;
+cursor: pointer;
+max-width: 0 auto;
+border-radius:100px;
+margin-top: 10px;
+border: 0;
+background-color: rgba(253, 146, 34, 1);  }
 
 
-.contact-form-btn:hover,
-.contact-form-btn:focus {
-    background-color: var(--products-color);
-    color: var(--main-title-color);
+.our-contact-form-btn:hover,
+.our-contact-form-btn:focus {
+    background-color:rgba(252, 241, 224, 1);
+    color: rgba(253, 146, 34, 1);
+  
 }
