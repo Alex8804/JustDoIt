@@ -26,8 +26,8 @@
       з
     />
     
-    <script type="module" crossorigin src="/JustDoIt/assets/index-86d5c7d6.js"></script>
-    <link rel="stylesheet" href="/JustDoIt/assets/index-25e6fbd8.css">
+    <script type="module" crossorigin src="/JustDoIt/assets/index-aa1baed7.js"></script>
+    <link rel="stylesheet" href="/JustDoIt/assets/index-469bbd50.css">
   </head>
   <body>
     <header class="header">
@@ -756,14 +756,64 @@
     </main>
 
     
+    <!-- MODAL WINDOW -->
+    <div class="modal-explore-menu">
+  <div class="modal-explore-menu-container modal">
+    <button type="button" class="modal-explore-menu-close-btn">
+      <svg class="modal-explore-menu-close-icon" width="24" height="24">
+        <use href="/JustDoIt/assets/icons-b7ad3fec.svg#close-icon"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="/JustDoIt/assets/tab-desc-modal-explore-538x196-99dd9415.jpg 1x, /JustDoIt/assets/tab-desc-modal-explore-1076x392@2x-722e405a.jpg 2x"
+        media="(min-width:768px)"
+        type="image/jpeg"
+        sizes="538px"
+      />
+      <source
+        srcset="/JustDoIt/assets/mobile-modal-explore-311x169-91ffaf73.jpg 1x, /JustDoIt/assets/mobile-modal-explore-622x338@2x-ffb6de54.jpg 2x"
+        media="(max-width:767px)"
+        type="image/jpeg"
+        sizes="311px"
+      />
+      <img
+        class="modal-explore-picture"
+        src="/JustDoIt/assets/mobile-modal-explore-311x169-91ffaf73.jpg"
+        alt="broken chocolate bars"
+      />
+    </picture>
+    <h2 class="modal-window-name">
+      Explore our <br />
+      <span class="akcent-text">new chocolate</span> first!
+    </h2>
+    <form class="modal-explore-form">
+      <label for="user-explore-email" class="send-form">
+        <input
+          class="modal-explore-form-input"
+          id="user-explore-email"
+          type="email"
+          name="user_email"
+          placeholder="Enter your email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+        <button class="modal-explore-btn" type="submit">Subscribe</button>
+      </label>
+    </form>
+  </div>
+</div>
+<div class="overlay js-overlay-modal"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- MODAL WINDOW -->
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
   </body>
 </html>
