@@ -267,11 +267,9 @@
   border-radius: 15px;
   padding: 28px;
   overflow-y: scroll;
-  /*
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-  */
 }
 
 @media screen and (min-width: 1200px) {
