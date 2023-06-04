@@ -247,7 +247,6 @@
   backface-visibility: hidden;
   transform: rotateY(180deg);
 }
-
 @media screen and (min-width: 1200px) {
   .flip-card-back {
     padding: 20px;
@@ -283,7 +282,6 @@
     width: calc((100% - 57px) / 4);
   }
 }
-
 .components-chocolate {
   height: 270px;
 }
@@ -310,4 +308,26 @@
 .components-semi {
   background-color: var(--color-white);
   height: 270px;
+}
+
+.text-container {
+  padding: 6px 16px;
+  height: 24px;
+  background: #fd9222;
+  border-radius: 35px;
+}
+.text-container-light {
+  background-color: #fafafa;
+  border: 1px solid #fd9222;
+}
+.name-ingridient {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.name-ingridient-black {
+  color: black;
 }
