@@ -7,7 +7,6 @@
   margin: 0px auto;
 }
 .how-its-made-section {
-  padding-bottom: 72px;
   background-color: var(--text-color-dark-bg);
 }
 .how-its-made-description {
@@ -62,7 +61,7 @@ iframe {
   margin-top: 5px;
   box-sizing: border-box;
   position: absolute;
-  border: 1px solid #ECEDED;
+  border: 1px solid #eceded;
   margin-left: -12px;
 }
 .how-its-made-title-p {
@@ -108,9 +107,7 @@ iframe {
     padding-left: 77px;
     padding-right: 77px;
   }
-  .how-its-made-section {
-    padding-bottom: 100px;
-  }
+
   .how-its-made-description {
     width: 614px;
     height: 356px;
@@ -157,9 +154,7 @@ iframe {
     padding-left: 32px;
     padding-right: 32px;
   }
-  .how-its-made-section {
-    padding-bottom: 128px;
-  }
+
   .how-its-made-description {
     width: 516px;
     height: 400px;
