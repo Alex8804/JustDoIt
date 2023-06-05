@@ -192,6 +192,7 @@ border-radius: 100px;
 transition: color var(--top-sellers-animation-speed-slow), background-color var(--top-sellers-animation-speed-fast);
 }
 
+
 @media only screen and (min-width: 768px) {
   .top-sellers-button {
     font-size: 18px;
