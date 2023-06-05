@@ -25,8 +25,8 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     
-    <script type="module" crossorigin src="/JustDoIt/assets/index-9e086296.js"></script>
-    <link rel="stylesheet" href="/JustDoIt/assets/index-7f12b6eb.css">
+    <script type="module" crossorigin src="/JustDoIt/assets/index-1a077f01.js"></script>
+    <link rel="stylesheet" href="/JustDoIt/assets/index-0b661ac9.css">
   </head>
   <body>
     <header class="header">
@@ -666,7 +666,7 @@
   </div>
 </section>
 
-      <section class="section-pad reviews-section" id="reviews">
+      <section class="section-pad reviews-section">
   <div class="reviews-container swiper slide-container">
     <h2 class="reviews-title">
       <span class="accent-reviews-title">chocolate</span> is loved
@@ -762,6 +762,7 @@
     <button class="reviews-btn" type="button" id="open-review">
       Leave a review
     </button>
+    <div id="overlay-review_w" class="overlay"></div>
   </div>
 </section>
 
@@ -775,7 +776,8 @@
       work of art that is sure to please.
     </p>
   </div>
-  <button class="subscribe_btn" type="button" data-modal-open>Subscribe</button>
+  <button class="subscribe_btn" type="button" id="open-subs">Subscribe</button>
+  <div id="overlay-subs_w" class="overlay"></div>
 </section>
 
       <!-- <div class="modal-buy" id="buynow">
@@ -910,8 +912,8 @@
     ></textarea>
     <button class="btn-submit" type="submit">Submit</button>
   </form>
-  <div id="overlay-buynow_w" class="overlay"></div>
 </div>
+<div id="overlay-buynow_w" class="overlay"></div>
  -->
     </main>
 
@@ -1125,11 +1127,78 @@
     ></textarea>
     <button class="btn-submit" type="submit">Submit</button>
   </form>
-  <div id="overlay-buynow_w" class="overlay"></div>
+</div>
+<div id="overlay-buynow_w" class="overlay"></div>
+
+    <div id="review" class="modal">
+  <div class="window-review">
+    <button class="close" type="button" data-modal-close aria-label="Close">
+      <svg class="icon-modal">
+        <use href="../img/spraite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h2 class="review-title">
+      leave a review <span class="review-break"><br /></span>about
+      <span class="orange_text">our chocolate</span>
+    </h2>
+    <form class="review-form" method="post" autocomplete="on">
+      <label for="name">
+        <input
+          class="review-form-item"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label for="email">
+        <input
+          class="review-form-item"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          required
+          title="Please correct email"
+        />
+      </label>
+      <label for="phone" style="position: relative">
+        <div class="phone-prefix">
+          <svg class="icon-modal" width="24px" height="18px">
+            <use href="/JustDoIt/assets/spraite-2dc26b3e.svg#icon-flag"></use>
+          </svg>
+          <span class="phone-text">+380</span>
+        </div>
+        <input
+          class="review-form-item"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone number"
+          pattern="[1-9]{9}"
+          required
+          title="Please correct phone"
+        />
+      </label>
+      <textarea
+        class="review-form-item-text"
+        type="text"
+        id="text"
+        name="text"
+        rows="1"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="review-button" type="button" aria-label="Send" id="Send">
+        Send
+      </button>
+    </form>
+  </div>
+  <div id="overlay-review_w" class="overlay"></div>
 </div>
 
-    <div class="modal-explore-menu">
-  <div class="modal-explore-menu-container modal">
+    <div class="modal-explore-menu" id="subs">
+  <div class="modal-explore-menu-container modal-explore">
     <button type="button" class="modal-explore-menu-close-btn">
       <svg class="modal-explore-menu-close-icon" width="24" height="24">
         <use href="/JustDoIt/assets/icons-2bf5e8f2.svg#close-icon"></use>
