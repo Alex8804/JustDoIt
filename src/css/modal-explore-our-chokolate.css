@@ -7,11 +7,14 @@
 }
 
 .modal {
-  width: 90%;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 32px;
+  opacity: 1;
+  visibility: visible;
+  width: 95%; 
+  max-width: 311px; 
 }
 
 .modal-explore-menu-close-btn {
@@ -40,6 +43,7 @@
 
 .modal-explore-picture {
   margin-bottom: 32px;
+  width: 100%;
 }
 
 .modal-window-name {
@@ -59,7 +63,6 @@
 
 .send-form {
   position: relative;
-  padding: 0px 24px;
 }
 
 .modal-explore-form-input {
