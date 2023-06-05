@@ -176,7 +176,7 @@
   background-color: var(--accent-color);
 }
 
-.button-container {
+.top-sellers-button-container{
   display: flex;
   margin-top: 20px;
 }
