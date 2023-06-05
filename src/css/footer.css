@@ -39,7 +39,7 @@
   flex-direction: column;
   gap: 4px;
 }
-.contacts-link {
+.footer-contacts-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
@@ -47,13 +47,13 @@
   color: var(--text-color-dark-bg);
 }
 
-.contacts-list {
+.footer-contacts-list {
 }
 
-.contacts-item {
+.footer-contacts-item {
   margin-bottom: 4px;
 }
-.socials-list {
+.footer-socials-list {
   display: flex;
   gap: 14px;
 }
