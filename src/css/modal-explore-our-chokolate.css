@@ -6,9 +6,9 @@
   overflow: hidden;
 }
 
-.modal {
-  width: 95%; 
-  max-width: 311px; 
+.modal-explore {
+  width: 95%;
+  max-width: 311px;
   padding-top: 0px;
   padding-left: 0px;
   padding-right: 0px;
@@ -104,14 +104,14 @@
 }
 
 @media screen and (min-width: 375px) {
-  .modal {
+  .modal-explore {
     max-width: 311px;
     height: 350px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-explore {
     max-width: 538px;
     height: 412px;
   }

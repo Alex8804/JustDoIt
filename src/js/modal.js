@@ -66,7 +66,7 @@ function openModal(modalNumber) {
 
 // Функция для закрытия модального окна
 function closeModal() {
-  const modals = document.getElementsByClassName("modal-buy");
+  const modals = document.getElementsByClassName("modal");
   for (const modal of modals) {
     modal.classList.remove("is-open");
   }
