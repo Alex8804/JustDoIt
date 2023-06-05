@@ -1,5 +1,10 @@
-<div class="modal-buy">
-  <button type="button" class="modal-buy-close-btn">
+<div class="modal-buy" id="buynow">
+  <button
+    type="button"
+    class="modal-buy-close-btn"
+    data-modal-close
+    aria-label="Close"
+  >
     <svg class="modal-buy-close-icon" width="12" height="12">
       <use href="../img/icons.svg#close-icon"></use>
     </svg>
@@ -125,4 +130,5 @@
     ></textarea>
     <button class="btn-submit" type="submit">Submit</button>
   </form>
+  <div id="overlay-buynow_w" class="overlay"></div>
 </div>
