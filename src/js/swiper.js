@@ -47,6 +47,7 @@ const reviewsSwiper = new Swiper('.slide-container', {
 var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 18,
+        width: 335,
         loop: false,
         pagination: {
             el: ".swiper-pagination",
@@ -60,10 +61,12 @@ var swiper = new Swiper(".mySwiper", {
             768: {
                 slidesPerView: 2,
                 spaceBetween: 18,
+                width: 559,
             },
             1200: {
                 slidesPerView: 4,
-                spaceBetween: 18,
+              spaceBetween: 18,
+              width: 1136,
             },
         },
     });
