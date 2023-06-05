@@ -58,12 +58,13 @@ var swiper = new Swiper(".mySwiper", {
         },
         breakpoints: {
             768: {
-                slidesPerView: 2,
+                slidesPerView: 2.5,
                 spaceBetween: 18,
+
             },
             1200: {
                 slidesPerView: 4,
-                spaceBetween: 18,
+              spaceBetween: 18,
             },
         },
     });
