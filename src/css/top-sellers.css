@@ -93,6 +93,7 @@
 @media only screen and (min-width: 768px) {
   .top-sellers-img {
     width: 344px;
+    height: 464px;
   }
 }
 
@@ -181,7 +182,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .button-container {
+  .top-sellers-button-container {
     margin-top: 32px;
   }
 }
