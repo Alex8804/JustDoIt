@@ -168,6 +168,10 @@
         margin-bottom: auto;
     }
 
+    .mobile-menu-container>.mobile-nav-menu {
+        margin-bottom: auto;
+    }
+
     .mobile-nav-item:not(:last-child) {
         margin-bottom: 24px;
     }
