@@ -41,7 +41,7 @@
 
 @media screen and (min-width: 768px) {
   .unique-item {
-    width: 486px;
+    max-width: 486px;
     margin-bottom: 50px;
   }
 }
@@ -65,7 +65,7 @@
 
 @media screen and (min-width: 768px) {
   .unique-item-text {
-    width: 411px;
+    max-width: 411px;
     margin-bottom: 28px;
   }
 }
