@@ -1,18 +1,31 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .modal-explore-menu-container {
-  opacity: 0;
-  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: var(--text-color-dark-bg);
   border-radius: 15px;
-  overflow: hidden;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 32px;
 }
 
 .modal-explore {
   width: 95%;
   max-width: 311px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 32px;
 }
 
 .modal-explore-menu-close-btn {
