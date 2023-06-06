@@ -48,6 +48,11 @@
 }
 .modal-buy-close-icon {
   stroke: var(--main-text-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-buy-close-icon:hover {
+  stroke: var(--main-color);
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 768px) {
   .modal-buy-close-icon {
