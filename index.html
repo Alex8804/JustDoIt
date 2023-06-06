@@ -26,7 +26,7 @@
     />
     
     <script type="module" crossorigin src="/JustDoIt/assets/index-1a077f01.js"></script>
-    <link rel="stylesheet" href="/JustDoIt/assets/index-65159fc4.css">
+    <link rel="stylesheet" href="/JustDoIt/assets/index-ad1e5527.css">
   </head>
   <body>
     <header class="header">
@@ -163,7 +163,7 @@
         <button class="buynow button_style" type="button" id="open-buynow1">
           Buy now
         </button>
-        <a class="howmade button_style" href="#howtomade">How it's made</a>
+        <a class="howmade button_style" href="#how_made">How it's made</a>
       </li>
       <li class="scroll">
         <p class="main_scroll">scroll down</p>
@@ -467,10 +467,7 @@
       <iframe
         class="how-its-made-video"
         src="https://www.youtube.com/embed/yYWZsGSwaIs"
-        poster="/src/img/how_its_made/pastry-chef-preparing-chocolate-cake.jpg"
         title="YouTube video player"
-        frameborder="0"
-        preload="none"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
@@ -678,7 +675,7 @@
           srcset="/JustDoIt/assets/1-26994fef.png 1x, /JustDoIt/assets/ret-1-9a168b69.png 2x"
           src="/JustDoIt/assets/1-26994fef.png"
           alt="person avatar"
-          width="80px"
+          width="80"
         />
         <h3 class="reviews-person-avatar">Victoria Dobrzhanska</h3>
         <p class="reviews-card-text">
@@ -692,7 +689,7 @@
           srcset="/JustDoIt/assets/2-60a3a2df.png 1x, /JustDoIt/assets/ret-2-56e4d2db.png 2x"
           src="/JustDoIt/assets/2-60a3a2df.png"
           alt="person avatar"
-          width="80px"
+          width="80"
         />
         <h3 class="reviews-person-avatar">Nazar Babenko</h3>
         <p class="reviews-card-text">
@@ -706,7 +703,7 @@
           srcset="/JustDoIt/assets/3-0b243c6a.png 1x, /JustDoIt/assets/ret-3-56ab040e.png 2x"
           src="/JustDoIt/assets/3-0b243c6a.png"
           alt="person avatar"
-          width="80px"
+          width="80"
         />
         <h3 class="reviews-person-avatar">Olena Kampusch</h3>
         <p class="reviews-card-text">
@@ -720,7 +717,7 @@
           srcset="/JustDoIt/assets/4-80136bd7.png 1x, /JustDoIt/assets/ret-4-5e13b95a.png 2x"
           src="/JustDoIt/assets/4-80136bd7.png"
           alt="person avatar"
-          width="80px"
+          width="80"
         />
         <h3 class="reviews-person-avatar">Natalia Sus</h3>
         <p class="reviews-card-text">
@@ -734,7 +731,7 @@
           srcset="/JustDoIt/assets/5-f5fad5d1.png 1x, /JustDoIt/assets/ret-5-08391c34.png 2x"
           src="/JustDoIt/assets/5-f5fad5d1.png"
           alt="person avatar"
-          width="80px"
+          width="80"
         />
         <h3 class="reviews-person-avatar">Danilo Nottingham</h3>
         <p class="reviews-card-text">
@@ -749,7 +746,7 @@
           srcset="/JustDoIt/assets/6-1460bcee.png 1x, /JustDoIt/assets/ret-6-8f1152e2.png 2x"
           src="/JustDoIt/assets/6-1460bcee.png"
           alt="person avatar"
-          width="80px"
+          width="80"
         />
         <h3 class="reviews-person-avatar">Irina Tydnyuk</h3>
         <p class="reviews-card-text">
@@ -762,7 +759,6 @@
     <button class="reviews-btn" type="button" id="open-review">
       Leave a review
     </button>
-    <div id="overlay-review_w" class="overlay"></div>
   </div>
 </section>
 
@@ -874,7 +870,7 @@
         <svg class="modal-buy-flag-icon" width="24" height="18">
           <use href="./img/icons.svg#Flag"></use>
         </svg>
-        <p class="phone-prefix">+380</p>
+        <p class="phone-prefix-buy">+380</p>
         <input
           class="modal-buy-input input-tel"
           type="tel"
@@ -920,7 +916,7 @@
     </main>
 
     <!-- Footer -->
-<footer class="footer">
+<footer class="footer" id="footer">
   <div class="footer-common-container">
     <div class="footer-container">
       <h2 class="footer-subtitle">
@@ -974,7 +970,7 @@
       </div>
     </div>
     <div>
-      <div class="devider"> </div>
+      <div class="devider"></div>
       <ul class="footer-nav-list list">
         <li class="footer-nav-item">
           <a class="footer-nav-link link" href="#home">Home</a>
@@ -1076,7 +1072,7 @@
         <svg class="modal-buy-flag-icon" width="24" height="18">
           <use href="/JustDoIt/assets/icons-2bf5e8f2.svg#Flag"></use>
         </svg>
-        <p class="phone-prefix">+380</p>
+        <p class="phone-prefix-buy">+380</p>
         <input
           class="modal-buy-input input-tel"
           type="tel"
@@ -1122,7 +1118,7 @@
     <div id="review" class="modal">
   <div class="window-review">
     <button class="close" type="button" data-modal-close aria-label="Close">
-      <svg class="icon-modal">
+      <svg class="icon-modal" width="12" height="12">
         <use href="/JustDoIt/assets/spraite-2dc26b3e.svg#icon-x-close"></use>
       </svg>
     </button>
@@ -1172,7 +1168,6 @@
       </label>
       <textarea
         class="review-form-item-text"
-        type="text"
         id="text"
         name="text"
         rows="1"
@@ -1204,13 +1199,11 @@
         srcset="/JustDoIt/assets/tab-desc-modal-explore-538x196-99dd9415.jpg 1x, /JustDoIt/assets/tab-desc-modal-explore-1076x392@2x-722e405a.jpg 2x"
         media="(min-width:768px)"
         type="image/jpeg"
-        sizes="538px"
       />
       <source
         srcset="/JustDoIt/assets/mobile-modal-explore-311x169-91ffaf73.jpg 1x, /JustDoIt/assets/mobile-modal-explore-622x338@2x-ffb6de54.jpg 2x"
         media="(max-width:767px)"
         type="image/jpeg"
-        sizes="311px"
       />
       <img
         class="modal-explore-picture"
@@ -1232,9 +1225,7 @@
         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         required
       />
-      <button class="modal-explore-btn" type="submit" id="open-subs">
-        Subscribe
-      </button>
+      <button class="modal-explore-btn" type="submit">Subscribe</button>
     </form>
   </div>
 </div>
