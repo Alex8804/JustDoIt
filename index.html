@@ -26,7 +26,7 @@
     />
     
     <script type="module" crossorigin src="/JustDoIt/assets/index-1a077f01.js"></script>
-    <link rel="stylesheet" href="/JustDoIt/assets/index-0b661ac9.css">
+    <link rel="stylesheet" href="/JustDoIt/assets/index-1d5258e2.css">
   </head>
   <body>
     <header class="header">
@@ -780,140 +780,142 @@
   <div id="overlay-subs_w" class="overlay"></div>
 </section>
 
-      <!-- <div class="modal-buy" id="buynow">
-  <button
-    type="button"
-    class="modal-buy-close-btn"
-    data-modal-close
-    aria-label="Close"
-  >
-    <svg class="modal-buy-close-icon" width="12" height="12">
-      <use href="../img/icons.svg#close-icon"></use>
-    </svg>
-  </button>
-  <h2 class="modal-buy-title"><span class="title-orange">buy</span> now</h2>
-  <ul class="modal-product-list list">
-    <li class="modal-product-list-item">
-      <img
-        class="modal-buy-img"
-        srcset="
-          ../img/modal-buy/modal-buy-img1-84.png   84w,
-          ../img/modal-buy/modal-buy-img1-120.png 120w,
-          ../img/modal-buy/modal-buy-img1-168.png 168w,
-          ../img/modal-buy/modal-buy-img1-240.png 240w
-        "
-        src="../img/modal-buy/modal-buy-img1-84.png"
-        sizes="(min-width: 768px) 120px, 84px"
-        alt="Kinder chokolate"
-      /><span class="modal-buy-weight">100 g</span>
-    </li>
-    <li class="modal-product-list-item">
-      <img
-        class="modal-buy-img"
-        srcset="
-          ../img/modal-buy/modal-buy-img2-84.png   84w,
-          ../img/modal-buy/modal-buy-img2-120.png 120w,
-          ../img/modal-buy/modal-buy-img2-168.png 168w,
-          ../img/modal-buy/modal-buy-img2-240.png 240w
-        "
-        src="../img/modal-buy/modal-buy-img2-84.png"
-        sizes="(min-width: 768px) 120px, 84px"
-        alt="Praline chokolate"
-      /><span class="modal-buy-weight">200 g</span>
-    </li>
-    <li class="modal-product-list-item">
-      <img
-        class="modal-buy-img"
-        srcset="
-          ../img/modal-buy/modal-buy-img3-84.png   84w,
-          ../img/modal-buy/modal-buy-img3-120.png 120w,
-          ../img/modal-buy/modal-buy-img3-168.png 168w,
-          ../img/modal-buy/modal-buy-img3-240.png 240w
-        "
-        src="../img/modal-buy/modal-buy-img3-84.png"
-        sizes="(min-width: 768px) 120px, 84px"
-        alt="Dark chokolate"
-      /><span class="modal-buy-weight">300 g</span>
-    </li>
-  </ul>
-  <form class="modal-buy-form">
-    <label for="modal-buy-input-name" class="modal-buy-label">
-      Personal information
-    </label>
-    <label for="modal-buy-input-surname" class="modal-buy-label"> </label>
-    <div class="personal-information">
+      <!-- <div id="buynow" class="modal">
+  <div class="modal-buy">
+    <button
+      type="button"
+      class="close modal-buy-close-btn"
+      data-modal-close
+      aria-label="Close"
+    >
+      <svg class="modal-buy-close-icon" width="12" height="12">
+        <use href="./img/icons.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy-title"><span class="title-orange">buy</span> now</h2>
+    <ul class="modal-product-list list">
+      <li class="modal-product-list-item">
+        <img
+          class="modal-buy-img"
+          srcset="
+            ./img/modal-buy/modal-buy-img1-84.png   84w,
+            ./img/modal-buy/modal-buy-img1-120.png 120w,
+            ./img/modal-buy/modal-buy-img1-168.png 168w,
+            ./img/modal-buy/modal-buy-img1-240.png 240w
+          "
+          src="./img/modal-buy/modal-buy-img1-84.png"
+          sizes="(min-width: 768px) 120px, 84px"
+          alt="Kinder chokolate"
+        /><span class="modal-buy-weight">100 g</span>
+      </li>
+      <li class="modal-product-list-item">
+        <img
+          class="modal-buy-img"
+          srcset="
+            ./img/modal-buy/modal-buy-img2-84.png   84w,
+            ./img/modal-buy/modal-buy-img2-120.png 120w,
+            ./img/modal-buy/modal-buy-img2-168.png 168w,
+            ./img/modal-buy/modal-buy-img2-240.png 240w
+          "
+          src="../img/modal-buy/modal-buy-img2-84.png"
+          sizes="(min-width: 768px) 120px, 84px"
+          alt="Praline chokolate"
+        /><span class="modal-buy-weight">200 g</span>
+      </li>
+      <li class="modal-product-list-item">
+        <img
+          class="modal-buy-img"
+          srcset="
+            ./img/modal-buy/modal-buy-img3-84.png   84w,
+            ./img/modal-buy/modal-buy-img3-120.png 120w,
+            ./img/modal-buy/modal-buy-img3-168.png 168w,
+            ./img/modal-buy/modal-buy-img3-240.png 240w
+          "
+          src="./img/modal-buy/modal-buy-img3-84.png"
+          sizes="(min-width: 768px) 120px, 84px"
+          alt="Dark chokolate"
+        /><span class="modal-buy-weight">300 g</span>
+      </li>
+    </ul>
+    <form class="modal-buy-form">
+      <label for="modal-buy-input-name" class="modal-buy-label">
+        Personal information
+      </label>
+      <label for="modal-buy-input-surname" class="modal-buy-label"> </label>
+      <div class="personal-information">
+        <input
+          class="modal-buy-input"
+          type="text"
+          name="form-buy-name"
+          placeholder="Name"
+          id="modal-buy-input-name"
+        />
+
+        <input
+          class="modal-buy-input"
+          type="text"
+          name="form-buy-surname"
+          placeholder="Surname"
+          id="modal-buy-input-surname"
+        />
+      </div>
+      <label for="modal-buy-input-email" class="modal-buy-label"> Email </label>
       <input
         class="modal-buy-input"
-        type="text"
-        name="form-buy-name"
-        placeholder="Name"
-        id="modal-buy-input-name"
+        type="email"
+        name="form-buy-email"
+        placeholder="Enter your email"
+        id="modal-buy-input-email"
       />
+      <label for="modal-buy-input-tel" class="modal-buy-label label-tel">
+        Phone number
+      </label>
+      <div class="modal-buy-thumb-tel">
+        <svg class="modal-buy-flag-icon" width="24" height="18">
+          <use href="./img/icons.svg#Flag"></use>
+        </svg>
+        <p class="phone-prefix">+380</p>
+        <input
+          class="modal-buy-input input-tel"
+          type="tel"
+          maxlength="9"
+          name="form-buy-tel"
+          placeholder="Phone number"
+          id="modal-buy-input-tel"
+        />
+      </div>
 
-      <input
-        class="modal-buy-input"
-        type="text"
-        name="form-buy-surname"
-        placeholder="Surname"
-        id="modal-buy-input-surname"
-      />
-    </div>
-    <label for="modal-buy-input-email" class="modal-buy-label"> Email </label>
-    <input
-      class="modal-buy-input"
-      type="email"
-      name="form-buy-email"
-      placeholder="Enter your email"
-      id="modal-buy-input-email"
-    />
-    <label for="modal-buy-input-tel" class="modal-buy-label label-tel">
-      Phone number
-    </label>
-    <div class="modal-buy-thumb-tel">
-      <svg class="modal-buy-flag-icon" width="24" height="18">
-        <use href="../img/icons.svg#Flag"></use>
-      </svg>
-      <p class="phone-prefix">+380</p>
-      <input
-        class="modal-buy-input input-tel"
-        type="tel"
-        maxlength="9"
-        name="form-buy-tel"
-        placeholder="Phone number"
-        id="modal-buy-input-tel"
-      />
-    </div>
-
-    <label for="modal-buy-input-card" class="modal-buy-label">
-      Card number
-    </label>
-    <div class="modal-buy-thumb-card">
-      <svg class="modal-buy-card-icon" width="32" height="21">
-        <use href="../img/icons.svg#Mastercard"></use>
-      </svg>
-      <input
-        class="modal-buy-input card-input"
-        type="tel"
-        pattern="^[0-9]{16}$"
-        maxlength="16"
-        name="form-buy-card"
-        placeholder="Enter card"
-        id="modal-buy-input-card"
-      />
-    </div>
-    <label for="modal-buy-input-comment" class="modal-buy-label">
-      Comment </label
-    ><textarea
-      class="modal-buy-textarea"
-      name="Comment"
-      rows="3"
-      placeholder="Enter text"
-      id="modal-buy-input-comment"
-    ></textarea>
-    <button class="btn-submit" type="submit">Submit</button>
-  </form>
+      <label for="modal-buy-input-card" class="modal-buy-label">
+        Card number
+      </label>
+      <div class="modal-buy-thumb-card">
+        <svg class="modal-buy-card-icon" width="32" height="21">
+          <use href="./img/icons.svg#Mastercard"></use>
+        </svg>
+        <input
+          class="modal-buy-input card-input"
+          type="tel"
+          pattern="^[0-9]{16}$"
+          maxlength="16"
+          name="form-buy-card"
+          placeholder="Enter card"
+          id="modal-buy-input-card"
+        />
+      </div>
+      <label for="modal-buy-input-comment" class="modal-buy-label">
+        Comment </label
+      ><textarea
+        class="modal-buy-textarea"
+        name="Comment"
+        rows="3"
+        placeholder="Enter text"
+        id="modal-buy-input-comment"
+      ></textarea>
+      <button class="btn-submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="overlay-buynow_w" class="overlay"></div>
 </div>
-<div id="overlay-buynow_w" class="overlay"></div>
  -->
     </main>
 
@@ -995,146 +997,133 @@
 </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="modal-buy" id="buynow">
-  <button
-    type="button"
-    class="modal-buy-close-btn"
-    data-modal-close
-    aria-label="Close"
-  >
-    <svg class="modal-buy-close-icon" width="12" height="12">
-      <use href="../img/icons.svg#close-icon"></use>
-    </svg>
-  </button>
-  <h2 class="modal-buy-title"><span class="title-orange">buy</span> now</h2>
-  <ul class="modal-product-list list">
-    <li class="modal-product-list-item">
-      <img
-        class="modal-buy-img"
-        srcset="
-          ../img/modal-buy/modal-buy-img1-84.png   84w,
-          ../img/modal-buy/modal-buy-img1-120.png 120w,
-          ../img/modal-buy/modal-buy-img1-168.png 168w,
-          ../img/modal-buy/modal-buy-img1-240.png 240w
-        "
-        src="../img/modal-buy/modal-buy-img1-84.png"
-        sizes="(min-width: 768px) 120px, 84px"
-        alt="Kinder chokolate"
-      /><span class="modal-buy-weight">100 g</span>
-    </li>
-    <li class="modal-product-list-item">
-      <img
-        class="modal-buy-img"
-        srcset="
-          ../img/modal-buy/modal-buy-img2-84.png   84w,
-          ../img/modal-buy/modal-buy-img2-120.png 120w,
-          ../img/modal-buy/modal-buy-img2-168.png 168w,
-          ../img/modal-buy/modal-buy-img2-240.png 240w
-        "
-        src="../img/modal-buy/modal-buy-img2-84.png"
-        sizes="(min-width: 768px) 120px, 84px"
-        alt="Praline chokolate"
-      /><span class="modal-buy-weight">200 g</span>
-    </li>
-    <li class="modal-product-list-item">
-      <img
-        class="modal-buy-img"
-        srcset="
-          ../img/modal-buy/modal-buy-img3-84.png   84w,
-          ../img/modal-buy/modal-buy-img3-120.png 120w,
-          ../img/modal-buy/modal-buy-img3-168.png 168w,
-          ../img/modal-buy/modal-buy-img3-240.png 240w
-        "
-        src="../img/modal-buy/modal-buy-img3-84.png"
-        sizes="(min-width: 768px) 120px, 84px"
-        alt="Dark chokolate"
-      /><span class="modal-buy-weight">300 g</span>
-    </li>
-  </ul>
-  <form class="modal-buy-form">
-    <label for="modal-buy-input-name" class="modal-buy-label">
-      Personal information
-    </label>
-    <label for="modal-buy-input-surname" class="modal-buy-label"> </label>
-    <div class="personal-information">
+    <div id="buynow" class="modal">
+  <div class="modal-buy">
+    <button
+      type="button"
+      class="close modal-buy-close-btn"
+      data-modal-close
+      aria-label="Close"
+    >
+      <svg class="modal-buy-close-icon" width="12" height="12">
+        <use href="/JustDoIt/assets/icons-2bf5e8f2.svg#close-icon"></use>
+      </svg>
+    </button>
+    <h2 class="modal-buy-title"><span class="title-orange">buy</span> now</h2>
+    <ul class="modal-product-list list">
+      <li class="modal-product-list-item">
+        <img
+          class="modal-buy-img"
+          srcset="data:image/png;base64,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 84w, /JustDoIt/assets/modal-buy-img1-120-608b76a4.png 120w, /JustDoIt/assets/modal-buy-img1-168-c465ce2e.png 168w, /JustDoIt/assets/modal-buy-img1-240-75fae25d.png 240w"
+          src="data:image/png;base64,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"
+          sizes="(min-width: 768px) 120px, 84px"
+          alt="Kinder chokolate"
+        /><span class="modal-buy-weight">100 g</span>
+      </li>
+      <li class="modal-product-list-item">
+        <img
+          class="modal-buy-img"
+          srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABFCAMAAADjPzHNAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAL3UExURUdwTLiJccyqjObTuvrmxPToxVAxI9/LsfPZ2aCBc+DGo+zSrZxyWfTWrMeihb+Ug+DGo9m9mvrkwLN5Xfz57YxnSefJpvjs0riTc6FcQOLHpdS9maB8Vvjrx9W5nbiad76hffr0yvnnwophSLOHbOHHo/rpwHBPOH1aQPrx0dq6otGWfr6eiZZ/WfjXqP3htms8Llo8Kvrxz4lONOS+mvzXt/vXssebkMqumVw5Klo4KV44K31LNKmIZOGwltu9kLaAbEMsG7N9avvwyN/GoD4hFKeObzoeEhQPAxwSBkEkFyQVCebKpK6Yd1UsGzUcEVAoGa+VcPbYq+3QqPTVrauScjEaDvHSqurOqMmuiKmVdysXDbSAbEwjEvnduKKMbKCJZkUiFJV9XUYnGQsOAdSzhV0vHqGOePn47GI0IM6zi/j35bOad/j23vncsUEdECUcD/zryFwpF5qEZsusgDUlF+HEmGI6Ke7Ln2g5I9vEn6h2Yr2edotxTMShdkssHFgzIurGl/HXueDHo9i/mfvbqrOUdbmZddWvfFM5KvvWnWguG3tKNodUQriFc76LeaCEb52EYsileOjOrs6necOtj/feweS8m39MKp9sKZ9rVbSYcoFpS7iabdK4k5hxRMGpiMOlgPPRnqODXN2zfvr01tu6jO7Ts/bLlmlDNMOhhtu2l286JYpmWHtUSLyHZIhmOCwhFfvnt5l2ToBBJqx/QdKvlOvAg8aZaW9EL5FdRKVtWYZNNqx7aJRQNU1DM3JWNkEyI/r58uPAkNq7n/LEjppbJrCEU3FKOuGnc7J6YsOPe6mGbop2Xd/Kr11CM35bPr2QWItnTb2gftOaZdagc+qvf+2ziZ1pTMygjK+Ygs+4nfzgqdrBqLqYfIpYLbaLauHBooNdTXM8HZ5vXLFzVcmzk62Rd6yMY6ZtOffOqdamgc2cgMeVhMqQctytiW9cSFxON7aijsmRW7uSZLVtMZJrXTktJL6DTKd4M5RiM4pEJI+AdFkInhoAAABEdFJOUwAg/hf+Iv4KAgpqMkqPmTPnklN/NeZD/d/8xP5qYcBxu4x3p/GpqS+Kt1HA7tfH5lnjzM/RuPJf5pDRmqu77aO24uPanQVI6QAACYBJREFUWMPtmGVUW9kWx4sHLbRT16lMZeyNdF6fzhMulyQ0CS0E0kgTMklxkkAIIYQEd3d3dy3e4lakULxQrO4+05kP79zQkU9v5XY+vbXef617Ix9+63/22efsfc6mTf/Xf5Gajv4hrV9+aWlhfj9SxagnyYfx4btfGIOk+9+c2qKm9R4kjIrB7lNbtNQ0Du1XVW1Mus9Q/2iLrq6GxuaDpapl55LKrNVPaKBlahkcyVsus/pc3TeuZ8W76uUTKwY/0bdopaysLMlsxWt5OaiMseOQhsa+D5QOBWafYc7SUmlP3H1G0ehio6qqamlpjy8/sadqOehhknNRY2PjYlEin+9UwC/4QFmorplZz+3SycwVn2JgdXRxIUFVtcx3R8GoqmpPnC8jMdHXyoLB4Dt11U7PqCkNdedQspeCJpsGp4sZVtZmfsZ+RYm+fCfbHb5FRQwGo+icFWOHg21XF7/378qnkDvHLScnqP/eq1eXPPI5wW5uHE63T25Abe1ZIGdnZ0aBbZctoDrcUFc2phgtw+DYnOz+e319r4I9OG6c2GtATRyf3NxLPrnFubm5N5xsbR0cbG27apWPKebr4FhKTkNKX19Kk3Ehh+Pd8ENKSkNToY9HN3g8cnNDCxRQJwcH5aGbjnLi3RTQe/HGHA7HPrYhBVDju82687s9fHqLQ/kI1MHJydZB+UWgXwji+LIfgNwAlOJmT8loSPmhyd3dPTgfWAVQQAQ2nZxOKL+cdNwL7e0p2S/7vTL9M+0RUSjeGfYAWhjc3Q2gBcClg5O61RY0i9TIE8AoCZPZlA1lZ2cnJNhn+gOqu49HbgAg7mB8o6+LbmvR+dbIyODgwZ0m5oGBaUGOlsy8vLy7GTn2AGsGoAVd6mVT0x9v3bpXT0VFBd0WcOyfZPybn55XNItkMJks7Ax59nTE1XKSUmhd2rHr1mDZHE3S3h75MRqktt4XEBlryiv/8cd6AYlOx5uaYrGm4IWnuoStdQzPzDzpiGj7cRcap9oTFQMkCGYT6u81vbi5trbmgsdTyXgYYonbOjpa5+ae9Polh4UJOjajma1tlQNisR1B8PL6VP61tzff2sGQjEQiEbjl3LDy1uHhuZmk6XC6YNcf0Qz/q8qLzSI5idA0NZh/rSGrIZkIsUEU6FwxiU5oiaQ9elx2v5kuGEID1R6ojH5dUYKD25oGe/OnmvpvEtksOolNF8NkPFlCi4wabrQQh7UdUUMB/QOAVrxeLSG5hE1ND15/0S+G2GwizCZxqabC5AdRtEdRjdbl5R1b0Yz+8MCYZuXriopKFqv/+vUX3/fRWWR8TY2QxGXjobBHUZFRtOGHt7bpoUrSw5Uhl8fDK1fl4ZqEewB6k8TCaZZ0vgnhcgmE+keRtKGh4bnT29HV0+OVJSGy8oiSARGJtdZ0/Vo5ic4Wi2Q8nhxQ26IiI2ml+0+ibQFU9A6L6wXNYPxcQf2rvvowgYDughvoNJURCKS2KNqtIwYnt6uhrdNqpyfsCHRCszhMEFYeZqcQgRXSKRcQuB23litmQWX9N9rqf3qyLrlZDvGw+BKITCZTyUQckQixCPXJ9R2zs+uCt94PkvhfogzAJ3frkrl0GI/FyoBFNpHKw/KwnWPNEzGBcyt3Jmb7VZ/4qDvtQ9elWNa9TRZzKy4qdB480Rvf5udL9xhbF/n6Mpz56rUfoYMmmJjE2MTMn1HoPKKLyOuO49JSTrxbcKFPb28tw/lDdMPfk+PleMbR0fHMb7AAbHInMDDIOzY2Pv9Sb21x6CF0UEM3Ly/HDSHMM5bnLRGj0VevXkWo8cH5l2p7Q7egg+4H0KC0Dafm5pZAJkAXo6Ojr1oGenkjVm+cDUCZUzpuXkFBaWmB5goiAryACDBBBIK8vOODL91g6KPM0+323hlpaT8jAY7JdHV1BUYv/AINPYF2nWJArTdXMDeQrjYKubpeMLFMewdFOfebtP866YVATRS64GozIk1PT5dKR2xiTMzTNmIa8LXeZhVtFPvJVwKbSUfgcyOUTBvp+BVE4+lSGxPHHIo9p7A798mMRxSaEr21njS2+vTZs2eXFersFNbU8ICEQqGmOLltbCy8bdfQ45n7D2j/UDqeettKRCQyHo/l1eBNv1PI1HTjjcW7CMIE4S2zkUO3BkNp7UrXk2OiAZFcLpOFjI2FCLFYMgzDshDNGsAF3QSeyG3blZoqaZd83+sz26503f+LDMaxWCy6jKDJZuFgIkyEIBLJTiQPKbGZX4+IePygVSKhDU0Vt6T+S+ms+rOMCONwEJEIg4dMxVOJeCIEdvyS8FZaREREy/SD1lYJrWqwqrxV6dFrf6GJg1g4HM+UisPhyFjQPlHxkFxGwhFTaavhq63TU63rw1FVgxF2qUqPXlsTsNg4SPgdFhimIpODxwtZBLlIJJltWX9Nm3ksWZ+LiqqKCN+JopPAaRJrhFieKZkMQTDS7mGpRKJcUx7BtQtvj4wakkjaI9tpDx99gqI909aUsYVCHtI6kmGICqBUKgvGhdhFiOiidUkkjSahDT+uOmKAgonB/ClEE6byakDZIxNhGAvSyAVMHMSWN5eER6S20yRVVVU7D6A9oB/vZLNxSALAEMRyocIu4BMCfxDY4akPr6amLjd6eHh8pr8d1X5qYJJeQmBDwB0McC4uLiyQrRCOUM5tGUptSW5ZKk1Y6FmxcFb/UvnzmfbOwLqJcbFITIDegJmnUskudNDu2K1KWlLt1mZLG3sW43wTE9XV+Xzltz+VtLysaleb5PArT0cuY5FFz4Pooivj4+MTzxcWAS6RAQ6+4PDrXKt85cfszLuZHJOXNSFNHxkRgiSoefrT/PzzhIXF0dG4uCILC4uzFsiZOiDghq7yMT1wN6saQKUA6nolJD3d5Dk4n91e8PTzM7O2PmdlZfUz9XMUKaD9t6wsZkxWljTd5oL0TAI48t1e2OOPMP2sARXBWgG7ZwNOoZn+A3V1TGZdXXW1jYl5dgLFPhMgESYQAlWYBdQAVPX0QF4MkxnjCqDmaZTMzEx/f09jT2OzX6HnNpyiOvTqMQGUGVNdzTTPoOzxR5iINqAI9RwS17POqPpezN5PY4Ck1cy7GRRPMHRjBdXvVyhi1eIz1Ddyez+tk0oB1G3UeAOpsAqY1nFxcYa79XV03+N6DoM5dnybTZ45ZfQd0Q+ZKcPdR3W2a7zPbd9vDtOHt2V4+iFET8OjRjonNcC1JOb330xq7z24e7/Re431f0D/AaXClJ1dABHOAAAAAElFTkSuQmCC 84w, /JustDoIt/assets/modal-buy-img2-120-67e9956d.png 120w, /JustDoIt/assets/modal-buy-img2-168-17444e42.png 168w, /JustDoIt/assets/modal-buy-img2-240-d5067f2d.png 240w"
+          src="../img/modal-buy/modal-buy-img2-84.png"
+          sizes="(min-width: 768px) 120px, 84px"
+          alt="Praline chokolate"
+        /><span class="modal-buy-weight">200 g</span>
+      </li>
+      <li class="modal-product-list-item">
+        <img
+          class="modal-buy-img"
+          srcset="data:image/png;base64,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 84w, /JustDoIt/assets/modal-buy-img3-120-aa7d4998.png 120w, /JustDoIt/assets/modal-buy-img3-168-5ed657e1.png 168w, /JustDoIt/assets/modal-buy-img3-240-e7248f1b.png 240w"
+          src="data:image/png;base64,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"
+          sizes="(min-width: 768px) 120px, 84px"
+          alt="Dark chokolate"
+        /><span class="modal-buy-weight">300 g</span>
+      </li>
+    </ul>
+    <form class="modal-buy-form">
+      <label for="modal-buy-input-name" class="modal-buy-label">
+        Personal information
+      </label>
+      <label for="modal-buy-input-surname" class="modal-buy-label"> </label>
+      <div class="personal-information">
+        <input
+          class="modal-buy-input"
+          type="text"
+          name="form-buy-name"
+          placeholder="Name"
+          id="modal-buy-input-name"
+        />
+
+        <input
+          class="modal-buy-input"
+          type="text"
+          name="form-buy-surname"
+          placeholder="Surname"
+          id="modal-buy-input-surname"
+        />
+      </div>
+      <label for="modal-buy-input-email" class="modal-buy-label"> Email </label>
       <input
         class="modal-buy-input"
-        type="text"
-        name="form-buy-name"
-        placeholder="Name"
-        id="modal-buy-input-name"
+        type="email"
+        name="form-buy-email"
+        placeholder="Enter your email"
+        id="modal-buy-input-email"
       />
+      <label for="modal-buy-input-tel" class="modal-buy-label label-tel">
+        Phone number
+      </label>
+      <div class="modal-buy-thumb-tel">
+        <svg class="modal-buy-flag-icon" width="24" height="18">
+          <use href="/JustDoIt/assets/icons-2bf5e8f2.svg#Flag"></use>
+        </svg>
+        <p class="phone-prefix">+380</p>
+        <input
+          class="modal-buy-input input-tel"
+          type="tel"
+          maxlength="9"
+          name="form-buy-tel"
+          placeholder="Phone number"
+          id="modal-buy-input-tel"
+        />
+      </div>
 
-      <input
-        class="modal-buy-input"
-        type="text"
-        name="form-buy-surname"
-        placeholder="Surname"
-        id="modal-buy-input-surname"
-      />
-    </div>
-    <label for="modal-buy-input-email" class="modal-buy-label"> Email </label>
-    <input
-      class="modal-buy-input"
-      type="email"
-      name="form-buy-email"
-      placeholder="Enter your email"
-      id="modal-buy-input-email"
-    />
-    <label for="modal-buy-input-tel" class="modal-buy-label label-tel">
-      Phone number
-    </label>
-    <div class="modal-buy-thumb-tel">
-      <svg class="modal-buy-flag-icon" width="24" height="18">
-        <use href="../img/icons.svg#Flag"></use>
-      </svg>
-      <p class="phone-prefix">+380</p>
-      <input
-        class="modal-buy-input input-tel"
-        type="tel"
-        maxlength="9"
-        name="form-buy-tel"
-        placeholder="Phone number"
-        id="modal-buy-input-tel"
-      />
-    </div>
-
-    <label for="modal-buy-input-card" class="modal-buy-label">
-      Card number
-    </label>
-    <div class="modal-buy-thumb-card">
-      <svg class="modal-buy-card-icon" width="32" height="21">
-        <use href="../img/icons.svg#Mastercard"></use>
-      </svg>
-      <input
-        class="modal-buy-input card-input"
-        type="tel"
-        pattern="^[0-9]{16}$"
-        maxlength="16"
-        name="form-buy-card"
-        placeholder="Enter card"
-        id="modal-buy-input-card"
-      />
-    </div>
-    <label for="modal-buy-input-comment" class="modal-buy-label">
-      Comment </label
-    ><textarea
-      class="modal-buy-textarea"
-      name="Comment"
-      rows="3"
-      placeholder="Enter text"
-      id="modal-buy-input-comment"
-    ></textarea>
-    <button class="btn-submit" type="submit">Submit</button>
-  </form>
+      <label for="modal-buy-input-card" class="modal-buy-label">
+        Card number
+      </label>
+      <div class="modal-buy-thumb-card">
+        <svg class="modal-buy-card-icon" width="32" height="21">
+          <use href="/JustDoIt/assets/icons-2bf5e8f2.svg#Mastercard"></use>
+        </svg>
+        <input
+          class="modal-buy-input card-input"
+          type="tel"
+          pattern="^[0-9]{16}$"
+          maxlength="16"
+          name="form-buy-card"
+          placeholder="Enter card"
+          id="modal-buy-input-card"
+        />
+      </div>
+      <label for="modal-buy-input-comment" class="modal-buy-label">
+        Comment </label
+      ><textarea
+        class="modal-buy-textarea"
+        name="Comment"
+        rows="3"
+        placeholder="Enter text"
+        id="modal-buy-input-comment"
+      ></textarea>
+      <button class="btn-submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <div id="overlay-buynow_w" class="overlay"></div>
 </div>
-<div id="overlay-buynow_w" class="overlay"></div>
 
     <div id="review" class="modal">
   <div class="window-review">
     <button class="close" type="button" data-modal-close aria-label="Close">
       <svg class="icon-modal">
-        <use href="../img/spraite.svg#icon-x-close"></use>
+        <use href="/JustDoIt/assets/spraite-2dc26b3e.svg#icon-x-close"></use>
       </svg>
     </button>
     <h2 class="review-title">
