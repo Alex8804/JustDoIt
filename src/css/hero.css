@@ -141,7 +141,7 @@ body {
   border: none;
 }
 
-.main_text {
+.main-text {
   padding-right: 10px;
   font-weight: 500;
   font-size: 20px;
@@ -150,20 +150,20 @@ body {
   color: var(--color_wh);
 }
 
-.main_butt {
+.main-butt {
   display: inline-flex;
   justify-content: center;
   gap: 14px;
   margin-top: 32px;
 }
 
-.scroll {
+.main-scroll-block {
   display: inline-flex;
   align-items: center;
   margin-top: 32px;
 }
 
-.main_scroll {
+.main-scroll {
   display: inline-flex;
   margin-right: 12px;
   font-weight: 500;
@@ -173,7 +173,7 @@ body {
   color: var(--color_wh);
 }
 
-.main_scroll-cont {
+.main-scroll-cont {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -184,13 +184,19 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main_scroll-cont:hover,
-.main_scroll-cont:focus {
+.main-scroll-block:hover .main-scroll,
+.main-scroll-block:focus .main-scroll {
+  color: var(--bg-button);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-scroll-block:focus .main-scroll-cont,
+.main-scroll-block:hover .main-scroll-cont {
   background-color: var(--bg-button);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main_scroll-icon {
+.main-scroll-icon {
   width: 16px;
   height: 15px;
   fill: var(--bg-button);
@@ -198,8 +204,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main_scroll-cont:hover .main_scroll-icon,
-.main_scroll-cont:focus .main_scroll-icon {
+.main-scroll-block:hover .main-scroll-icon,
+.main-scroll-block:focus .main-scroll-icon {
   fill: var(--color_wh);
   stroke: var(--color_wh);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -247,7 +253,7 @@ body {
 }
 
 @media screen and (max-width: 374px) {
-  .main_butt {
+  .main-butt {
     flex-direction: column;
   }
 }
@@ -293,7 +299,7 @@ body {
     }
   }
 
-  .main_text {
+  .main-text {
     padding-right: 140px;
     font-size: 28px;
     line-height: 1.21;
@@ -316,18 +322,18 @@ body {
     justify-content: space-between;
   }
 
-  .scroll {
+  .main-scroll-block {
     margin-left: 149px;
   }
 
-  .main_scroll {
+  .main-scroll {
     margin-right: 14px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.29;
   }
 
-  .main_scroll-cont {
+  .main-scroll-cont {
     width: 38px;
     height: 38px;
   }
@@ -368,7 +374,7 @@ body {
     }
   }
 
-  .main_text {
+  .main-text {
     padding-right: 572px;
     font-size: 28px;
     line-height: 1.21;
