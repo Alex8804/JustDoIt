@@ -1,14 +1,6 @@
-/**
-  |============================
-  | Desktop
-  |============================
-*/
 
 .list{
     list-style: none;
-}
-.our-products-section{
-    background-color: #FAFAFA;
 }
 
 
@@ -44,7 +36,10 @@
 .our-products-span{
     color:#FD9222;
 }
-
+.our-products-ul{
+    display: flex;
+    flex-direction: row;
+}
 .our-products-card{
     box-sizing: border-box;
     width: 335px;
