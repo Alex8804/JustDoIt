@@ -23,10 +23,9 @@
 /* /FOOTER */
 
 /* MODAL WINDOW */
-
+@import url('./modal.css');
 @import url('./modal-buy-now.css');
 @import url('./modal-review.css');
 @import url('./modal-explore-our-chokolate.css');
-@import url('./modal.css');
 
 /* /MODAL WINDOW */
