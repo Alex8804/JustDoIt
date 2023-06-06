@@ -1,5 +1,4 @@
 .subscribe {
-  max-width: 1200px;
   height: 370px;
   margin-left: auto;
   margin-right: auto;
@@ -19,9 +18,15 @@
     background-image: url(/img/subscribe/Subcribe-mob@2x.jpg);
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 375px) {
+  .subscribe {
+    width: 375px;
+  }
+}
+@media only screen and (min-width: 768px) {
   .subscribe {
     background-image: url(/img/subscribe/Subcribe-tab.jpg);
+    width: 768px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -31,9 +36,10 @@
     }
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1200px) {
   .subscribe {
     background-image: url(/img/subscribe/Subcribe-desk.jpg);
+    width: 1200px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -87,7 +93,7 @@
   }
 }
 .subtitle_subscribe {
-  max-width: 326px;
+  width: 326px;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -96,9 +102,14 @@
   margin: auto;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 374px) {
+  .subtitle_subscribe {
+    max-width: 100%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .subtitle_subscribe {
-    max-width: 467px;
+    width: 467px;
   }
 }
 .subscribe_btn {

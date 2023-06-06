@@ -1,0 +1,65 @@
+<div id="review" class="modal">
+  <div class="window-review">
+    <button class="close" type="button" data-modal-close aria-label="Close">
+      <svg class="icon-modal" width="12" height="12">
+        <use href="./img/spraite.svg#icon-x-close"></use>
+      </svg>
+    </button>
+    <h2 class="review-title">
+      leave a review <span class="review-break"><br /></span>about
+      <span class="orange_text">our chocolate</span>
+    </h2>
+    <form class="review-form" method="post" autocomplete="on">
+      <label for="name">
+        <input
+          class="review-form-item"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+        />
+      </label>
+      <label for="email">
+        <input
+          class="review-form-item"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          required
+          title="Please correct email"
+        />
+      </label>
+      <label for="phone" style="position: relative">
+        <span class="phone-prefix">
+          <svg class="icon-modal" width="24px" height="18px">
+            <use href="./img/spraite.svg#icon-flag"></use>
+          </svg>
+          <span class="phone-text">+380</span>
+        </span>
+        <input
+          class="review-form-item"
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone number"
+          pattern="[1-9]{9}"
+          required
+          title="Please correct phone"
+        />
+      </label>
+      <textarea
+        class="review-form-item-text"
+        id="text"
+        name="text"
+        rows="1"
+        placeholder="Enter text"
+      ></textarea>
+      <button class="review-button" type="button" aria-label="Send" id="Send">
+        Send
+      </button>
+    </form>
+  </div>
+  <div id="overlay-review_w" class="overlay"></div>
+</div>

@@ -1,0 +1,210 @@
+/* ================== mobile first ================== */
+
+.how-its-made-container {
+  min-width: 320px;
+  width: 100%;
+  margin: 0px auto;
+}
+.how-its-made-section {
+  background-color: var(--text-color-dark-bg);
+}
+.how-its-made-description {
+  background: var(--color-white);
+  border-radius: 15px;
+  padding: 20px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+  width: 320px;
+  height: 456px;
+}
+.how-its-made-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 32px;
+  justify-content: center;
+}
+.how-its-made-title-two {
+  color: var(--main-color);
+}
+iframe {
+  border-width: 0px;
+}
+.how-its-made-video {
+  width: 320px;
+  height: 500px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/how_its_made/pastry-chef-preparing-chocolate-cake-mobile.jpg);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.how-its-made-list {
+  width: 100%;
+  height: auto;
+}
+.how-its-made-text::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  margin-top: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid #eceded;
+  margin-left: -12px;
+}
+.how-its-made-title-p {
+  max-width: 320px;
+  height: auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+.how-its-made-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: var(--main-text-color);
+  margin-bottom: 18px;
+  display: flex;
+  max-width: 291px;
+  height: auto;
+  margin-left: 12px;
+}
+.how-its-made-text:nth-last-child(-n + 1) {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 375px) {
+  .how-its-made-container {
+    width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .how-its-made-video {
+    width: 280px;
+    height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/how_its_made/pastry-chef-preparing-chocolate-cake-mobile.jpg);
+    border-radius: 15px;
+    margin: 0 20px;
+  }
+}
+
+/* tablet version */
+
+@media screen and (min-width: 768px) {
+  .how-its-made-container {
+    width: 768px;
+    padding-left: 77px;
+    padding-right: 77px;
+  }
+
+  .how-its-made-description {
+    width: 614px;
+    height: 356px;
+    padding: 32px 102px 32px 32px;
+  }
+  .how-its-made-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .how-its-made-video {
+    width: 614px;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/how_its_made/pastry-chef-preparing-chocolate-cake-tablet.jpg);
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .how-its-made-recipe-title {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+  .how-its-made-text {
+    min-width: 464px;
+  }
+  .how-its-made-title-p {
+    min-width: 400px;
+    height: auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/* desktop version */
+
+@media screen and (min-width: 1200px) {
+  .how-its-made-container {
+    width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .how-its-made-description {
+    width: 516px;
+    height: 400px;
+    padding: 32px;
+  }
+  .how-its-made-content {
+    display: flex;
+    gap: 20px;
+  }
+  .how-its-made-video {
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/how_its_made/pastry-chef-preparing-chocolate-cake-desktop.jpg);
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .how-its-made-list {
+    width: 452px;
+    height: auto;
+  }
+  .how-its-made-title-p {
+    width: 400px;
+    height: 48px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .how-its-made-text {
+    width: 425px;
+    margin-bottom: 24px;
+  }
+  .how-its-made-title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding-top: 28px;
+  }
+}
+
