@@ -64,7 +64,7 @@ iframe {
   margin-left: -12px;
 }
 .how-its-made-title-p {
-  /* width: 320px; */
+  max-width: 320px;
   height: auto;
   font-family: 'Montserrat';
   font-style: normal;
@@ -83,7 +83,7 @@ iframe {
   color: var(--main-text-color);
   margin-bottom: 18px;
   display: flex;
-  /* width: 291px; */
+  max-width: 291px;
   height: auto;
   margin-left: 12px;
 }
@@ -99,11 +99,12 @@ iframe {
 }
 @media screen and (max-width: 320px) {
   .how-its-made-video {
-    width: 300px;
+    width: 280px;
     height: 500px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(/img/how_its_made/pastry-chef-preparing-chocolate-cake-mobile.jpg);
     border-radius: 15px;
+    margin: 0 20px;
   }
 }
 
@@ -141,10 +142,10 @@ iframe {
     margin-bottom: 28px;
   }
   .how-its-made-text {
-    width: 464px;
+    min-width: 464px;
   }
   .how-its-made-title-p {
-    width: 400px;
+    min-width: 400px;
     height: auto;
     font-family: 'Montserrat';
     font-style: normal;
@@ -206,9 +207,4 @@ iframe {
     padding-top: 28px;
   }
 }
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .how-its-made-content {
-  }
-}
+
