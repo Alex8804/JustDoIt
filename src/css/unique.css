@@ -87,7 +87,8 @@
 
 .text-description-flip {
   width: 100%;
-  height: 100%;
+  height: 146px;
+  overflow-y: scroll;
   font-family: var(--primary-font);
   font-style: normal;
   font-weight: 400;
@@ -96,6 +97,21 @@
   align-items: flex-start;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .text-description-flip {
+    height: 162px;
+  }
+}
+
+.scroll-sweet {
+  height: 146px;
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll-sweet {
+    height: 140px;
+  }
 }
 
 .components {
@@ -246,7 +262,6 @@
   background-color: var(--color-white);
   border-radius: 15px;
   padding: 28px;
-  overflow-y: scroll;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transform: rotateY(180deg);
