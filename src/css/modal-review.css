@@ -165,7 +165,8 @@
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-modal:hover {
+.icon-modal:hover,
+.icon-modal:focus {
   stroke: var(--bg-button);
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

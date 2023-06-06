@@ -244,7 +244,7 @@
     right: 24px;
   }
 }
-.phone-prefix {
+.phone-prefix-buy {
   position: absolute;
   top: 10px;
   left: 50px;
@@ -258,7 +258,7 @@
   box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (min-width: 768px) {
-  .phone-prefix {
+  .phone-prefix-buy {
     font-size: 18px;
     line-height: 22px;
     top: 17px;

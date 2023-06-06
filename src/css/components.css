@@ -26,6 +26,10 @@ body {
   font-family: var(--primary-font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section-pad {
   padding-top: 72px;
   padding-bottom: 72px;
