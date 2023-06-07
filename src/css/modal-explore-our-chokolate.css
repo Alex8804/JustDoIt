@@ -21,7 +21,7 @@
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 32px;
-  z-index: 100;
+  z-index: 998;
   overflow: hidden;
 }
 
@@ -179,11 +179,11 @@
     height: 52px;
   }
 
-    .tablet-btn-text {
-      display: block;
-    }
+  .tablet-btn-text {
+    display: block;
+  }
 
-    .mobile-btn-text {
-      display: none;
-    }
+  .mobile-btn-text {
+    display: none;
+  }
 }
